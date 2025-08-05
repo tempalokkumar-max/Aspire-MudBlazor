@@ -1,0 +1,73 @@
+﻿@page "/lead"
+@rendermode InteractiveServer
+
+<PageTitle>Lead</PageTitle>
+<MudContainer Class="mt-16 lead_container" MaxWidth="MaxWidth.Medium">
+    <MudPaper Class="pa-2" Elevation="4">
+        <MudStack Spacing="2">
+            <!-- Dropdown with Id/Name -->
+            <MudSelect T="int" Label="Select an Option" @bind-Value="_selectedId">
+                @if (DropdownOptions?.Any() == true)
+                {                        
+                    @foreach (var item in DropdownOptions)
+
+                    {
+                        <MudSelectItem Value="@item.Id">@item.Name</MudSelectItem>
+                    }
+
+                }
+                else
+                {
+                    <MudSelectItem Value="0">-- No options available --</MudSelectItem>
+
+                }       
+            </MudSelect> 
+            <!-- Input -->
+            <MudTextField Label="Enter a message" @bind-Value="_message" /> 
+            <!-- Submit Button -->
+            <MudButton Color="Color.Primary" OnClick="Submit">
+            Submit
+            </MudButton>
+            <!-- Output -->
+            @if (!string.IsNullOrWhiteSpace(_result))
+            {
+                <MudAlert Severity="Severity.Info">@_result</MudAlert>
+            }
+        </MudStack>
+    </MudPaper>
+     <MudPaper Class="pa-2 mt-4" Elevation="4">
+        @* <MudGrid>
+            <MudItem xs="12">
+                <MudPaper Class="d-flex align-center justify-center mud-width-full py-8">xs=12</MudPaper>
+            </MudItem>                       
+        </MudGrid> *@
+        <MudText Align="Align.Left"><b>Left</b> Lorem ipsum dolor sit amet.</MudText>
+     </MudPaper>
+</MudContainer>
+@code {
+    public int _selectedId;
+    public string _message;
+    public string _result;
+    // Dropdown data source
+    public List<DropdownItem> DropdownOptions;
+    protected override void OnInitialized()
+    {
+        // You MUST populate the list in OnInitialized or OnAfterRender
+        DropdownOptions = new()
+        {
+            new DropdownItem { Id = 1, Name = "Option A" },
+            new DropdownItem { Id = 2, Name = "Option B" },
+            new DropdownItem { Id = 3, Name = "Option C" }
+        };
+    } 
+    public void Submit()
+    {
+        var selected = DropdownOptions.FirstOrDefault(x => x.Id == _selectedId);
+        _result = $"Selected: {selected?.Name ?? "None"} (ID: {_selectedId}), Message: {_message}";
+    } 
+    public class DropdownItem
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+    }
+} 
