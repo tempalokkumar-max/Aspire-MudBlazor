@@ -67,3 +67,7 @@ h1:focus {
 .background-color-none {
     background-color: none;
 }
+.bg-white {
+    color: #25273a;
+    background-color: #fff;
+}
