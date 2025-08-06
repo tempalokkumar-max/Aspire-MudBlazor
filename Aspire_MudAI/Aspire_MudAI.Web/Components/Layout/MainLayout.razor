@@ -12,7 +12,7 @@
         <MudIconButton Icon="@(DarkLightModeButtonIcon)" Color="Color.Inherit" OnClick="@DarkModeToggle" />
         <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End" />
     </MudAppBar>
-    <MudDrawer id="nav-drawer" @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
+    <MudDrawer id="nav-drawer" @bind-Open="_navDrawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
         <NavMenu />
     </MudDrawer>
     <MudMainContent Class="pt-16 pa-4">
@@ -28,7 +28,7 @@
 </div>
 
 @code {
-    private bool _drawerOpen = true;
+    private bool _navDrawerOpen = true;
     private bool _isDarkMode = false;
     private MudTheme? _theme = null;
 
@@ -46,7 +46,7 @@
 
     private void DrawerToggle()
     {
-        _drawerOpen = !_drawerOpen;
+        _navDrawerOpen = !_navDrawerOpen;
     }
 
     private void DarkModeToggle()

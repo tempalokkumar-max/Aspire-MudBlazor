@@ -71,3 +71,9 @@ h1:focus {
     color: #25273a;
     background-color: #fff;
 }
+.chat_history{
+    width:30em;
+}
+.chat_content {
+    width: 60em;
+}

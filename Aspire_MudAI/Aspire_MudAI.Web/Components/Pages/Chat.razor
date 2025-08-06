@@ -2,86 +2,145 @@
 @rendermode InteractiveServer
 
 <PageTitle>Chat</PageTitle>
-<MudContainer Class="mt-16 chat_container" MaxWidth="MaxWidth.Medium">
-    <MudChat ChatPosition="ChatBubblePosition.End">
-        <MudChatHeader Name="Alok" Time="12:46" />
-    <MudChatBubble>
-        You underestimate my power!
-    </MudChatBubble>
-</MudChat>
-    <MudChat ChatPosition="ChatBubblePosition.Start" Color="Color.Transparent">
-    <MudChatBubble>
-        It's over Anakin
-    </MudChatBubble>
-    <MudChatBubble>
-        I have the high ground.
-    </MudChatBubble>
-        <MudChatFooter Text="Seen at 12:46" />
-</MudChat>
-<MudChat ChatPosition="ChatBubblePosition.End">
-        <MudChatHeader Name="Alok" Time="12:46" />
-    <MudChatBubble>
-        You underestimate my power!
-    </MudChatBubble>
-</MudChat>
-    <MudChat ChatPosition="ChatBubblePosition.Start" Color="Color.Transparent">
-        <MudChatBubble Class="bg-white">
-        You underestimate my power!
-    </MudChatBubble>
-        <MudChatFooter Text="Seen at 12:46" />
-</MudChat>
+<MudPaper Height="calc(100vh - 80px);margin-top: 10px;" Style="position:relative;" Elevation="0">
+    <MudIconButton Icon="@Icons.Material.Rounded.MarkChatRead" Disabled="false" aria-label="history" OnClick="@ToggleStartDrawer" />
 
-<MudChat ChatPosition="ChatBubblePosition.End">
-        <MudChatHeader Name="Alok" Time="12:46" />
-    <MudChatBubble>
-        You underestimate my power!
-    </MudChatBubble>
-</MudChat>
-    <MudChat ChatPosition="ChatBubblePosition.Start" Color="Color.Transparent">
-        <MudChatBubble Class="bg-white">
-            You underestimate my power!
-        </MudChatBubble>
-        <MudChatFooter Text="Seen at 12:46" />
-</MudChat>
-<MudGrid Class="mud-elevation-0 mb-10 mt-3">
-        <MudItem xs="12" sm="12" Class="justify-center mud-width-full mud-elevation-0 background-color-none">
-            <MudPaper Class="background-color-none" Elevation="0">
-                <MudText Align="Align.Center"  Typo="Typo.h5">Hey, what’s on your mind today?</MudText>
-            </MudPaper>
-    </MudItem>
-</MudGrid>
-    <MudGrid Class="pa-4 mud-elevation-0 border-4 rounded-b-xl rounded-l-xl rounded-s-xl rounded-br-xl rounded-be-xl rounded-tr-xl rounded-te-xl">
-        <MudItem xs="12" sm="12" Class="mud-elevation-0 pt-0 pl-0">
-            <MudPaper Class="mud-elevation-0 background-color-none" Elevation="0">
-                <MudTextField T="string"
-                              Label=""
-                              Variant="Variant.Filled"
-                              Lines="2"
-                              MaxLines="8"
-                              Placeholder="Type your message here..."
-                              AutoGrow="true"
-                              @bind-Value="MessageText" />
+    <MudDrawerContainer Class="mud-height-full">
+        @* <MudDrawer @bind-Open="@_openStart" Width="250px" Fixed="false" Anchor="Anchor.Start" Elevation="0" Variant="@DrawerVariant.Persistent" Class="z-10">
+            <MudDrawerHeader>
+                <MudText Typo="Typo.h6">History</MudText>
+            </MudDrawerHeader>
+            <MudChip T="string">@state</MudChip>
+            <MudChip T="string">@state</MudChip>
+            <MudChip T="string">@state</MudChip>
+        </MudDrawer> *@
+        <div class="">
+            <MudContainer Class="chat_container" MaxWidth="MaxWidth.Medium">
+                @* Chat section start *@
+                <MudChat Color="_selectedColor" Dense="@_dense" Elevation="@_elevation" Variant="@_variant" Square="_square" ArrowPosition="_selectedArrowPosition" ChatPosition="ChatBubblePosition.End">
+                    <MudChatHeader Name="Alok" Time="12:46" />
+                    @* <MudAvatar Size="@(_dense? Size.Small: Size.Medium)">
+                        <MudImage Src="assets/icon/ai-chatbot.svg" />
+                    </MudAvatar> *@
+                    <MudChatBubble>You wish you knew or did when you bought your first commercial property? </MudChatBubble>
+                    <MudChatFooter Text="Seen at 12:46" />
+                </MudChat>
 
-                @code {
-                    private string MessageText { get; set; }
-                }
-        </MudPaper>
-    </MudItem>
-        <MudItem xs="6" sm="6" Class="pt-0 pl-0 mud-elevation-0 chatsend_left background-color-none">
-            <MudPaper Class="justify-center mud-width-full mud-elevation-0 background-color-none" Elevation="0">
-                <MudIconButton Icon="@Icons.Material.Filled.Share" Disabled="true" aria-label="share" />
-            </MudPaper>
-    </MudItem>
-        <MudItem xs="6" sm="6" Class="pt-0 pl-0 mud-elevation-0 chatsend_right background-color-none">
-            <MudPaper Class="d-flex align-end justify-end mud-width-full mud-elevation-0 background-color-none" Elevation="0">
-                <MudIconButton Icon="@Icons.Material.Filled.Add" @onclick="OnAddClick" aria-label="Add" />
-                <MudIconButton Icon="@Icons.Material.Filled.KeyboardVoice" @onclick="OnVoiceClick" aria-label="Voice" />
-                <MudIconButton Icon="@Icons.Material.Outlined.ArrowUpward" @onclick="OnVoiceClick" aria-label="Send" />
-            </MudPaper>
-    </MudItem>    
-</MudGrid>
-</MudContainer>
-@code {
+                <MudChat Color="_selectedColor" Dense="@_dense" Elevation="@_elevation" Variant="@_oVariant" Square="_square" ArrowPosition="_selectedArrowPosition" ChatPosition="ChatBubblePosition.Start">
+                    <MudChatHeader Name="AI Response" Time="12:45" />
+                    <MudAvatar Size="@(_dense? Size.Small: Size.Medium)">
+                        <MudImage Src="assets/icon/ai-chatbot.svg" />
+                    </MudAvatar>
+                    <MudChatBubble>
+                        Brought bigger buildings and larger sites all close to each other
+                    </MudChatBubble>
+                    <MudChatBubble>
+                        So much you can then do on the sites and improve income while saving the travel time with office close to all your property activities.
+
+                    </MudChatBubble>
+                    <MudChatBubble>
+                        If I could combine all my sites together the property operation could be run more efficiently.<br />
+                        Based on a family of three running the property operation a site with say 200 tenants , 3ha industrial buildings about 7 ha land would be ideal...not too big and not too small.<br />
+
+                    </MudChatBubble>
+
+                    <MudChatBubble Color="Color.Primary">If a property that fits in well with your current portfolio or plan then buy it.<br /> You may not get that same opportunity again for many decades later.</MudChatBubble>
+                    <MudChatFooter Text="Delivered" />
+                </MudChat>
+                @* chat section end *@
+
+
+
+                <MudGrid Class="mud-elevation-0 mb-10 mt-3">
+                    <MudItem xs="12" sm="12" Class="justify-center mud-width-full mud-elevation-0 background-color-none">
+                        <MudPaper Class="background-color-none" Elevation="0">
+                            <MudText Align="Align.Center" Typo="Typo.h5">Hey, what’s on your mind today?</MudText>
+                        </MudPaper>
+                    </MudItem>
+                </MudGrid>
+                <MudGrid Class="pa-4 mud-elevation-0" Style="
+                                                        border: 5px solid transparent;
+                                                        /* Essential for border-image to work */
+                                                        border-image: linear-gradient(to bottom, #E0E0E0, #F5F5F5);
+                                                        border-image-slice: 1;
+                                                        /* Ensures the entire border uses the image */">
+                    <MudItem xs="12" sm="12" Class="mud-elevation-0 pt-0 pl-0">
+                        <MudPaper Class="mud-elevation-0 background-color-none" Elevation="0">
+                            <MudTextField T="string"
+                                          Label=""
+                                          Variant="Variant.Filled"
+                                          Lines="2"
+                                          MaxLines="8"
+                                          Placeholder="Type your message here..."
+                                          AutoGrow="true"
+                                          @bind-Value="MessageText" />
+                        </MudPaper>
+                    </MudItem>
+                    <MudItem xs="6" sm="6" Class="pt-0 pl-0 mud-elevation-0 chatsend_left background-color-none">
+                        <MudPaper Class="justify-center mud-width-full mud-elevation-0 background-color-none" Elevation="0">
+                            <MudIconButton Icon="@Icons.Material.Filled.Share" Disabled="true" aria-label="share" />
+                        </MudPaper>
+                    </MudItem>
+                    <MudItem xs="6" sm="6" Class="pt-0 pl-0 mud-elevation-0 chatsend_right background-color-none">
+                        <MudPaper Class="d-flex align-end justify-end mud-width-full mud-elevation-0 background-color-none" Elevation="0">
+                            <MudIconButton Icon="@Icons.Material.Filled.Add" @onclick="OnAddClick" aria-label="Add" />
+                            <MudIconButton Icon="@Icons.Material.Filled.KeyboardVoice" @onclick="OnVoiceClick" aria-label="Voice" />
+                            <MudIconButton Icon="@Icons.Material.Outlined.ArrowUpward" @onclick="OnVoiceClick" aria-label="Send" />
+                        </MudPaper>
+                    </MudItem>
+                </MudGrid>
+            </MudContainer>
+        </div>
+    </MudDrawerContainer>
+</MudPaper>
+
+@code
+{
+
+    [Inject] private IDialogService DialogService { get; set; }
+
+    string state = "Message box hasn't been opened yet";
+
+    private async void OnButtonClicked()
+    {
+        bool? result = await DialogService.ShowMessageBox(
+            "Warning",
+            "Deleting can not be undone!",
+            yesText: "Delete!", cancelText: "Cancel");
+        state = result == null ? "Canceled" : "Deleted!";
+        StateHasChanged();
+    }
+    private bool _openStart = false;
+    private bool _openEnd = false;
+    private bool _open = false;
+    private bool _isHistoryOpen = false;
+    private bool _showChat = false;
+    private string MessageText { get; set; }
+
+    private bool _dense = false;
+    private bool _square = true;
+    private int _elevation = 0;
+    private Variant _variant = Variant.Text;
+    private Variant _oVariant = Variant.Outlined;
+    private Color _selectedColor = Color.Default;
+    private ChatArrowPosition _selectedArrowPosition = ChatArrowPosition.Top;
+
+    [CascadingParameter]
+    public bool Rtl { get; set; }
+
+    private void ToggleStartDrawer()
+    {
+        _openStart = !_openStart;
+    }
+
+    private void ToggleEndDrawer()
+    {
+        _openEnd = !_openEnd;
+    }
+    private void ToggleDrawer()
+    {
+        _open = !_open;
+    }
     private void OnAddClick()
     {
         // Your logic here
@@ -93,4 +152,13 @@
         // Your logic here
         Console.WriteLine("Voice clicked");
     }
+    private void HistoryToggle()
+    {
+        _isHistoryOpen = !_isHistoryOpen;
+    }
+    private void ChatToggle()
+    {
+        _showChat = !_showChat;
+    }
+
 }
