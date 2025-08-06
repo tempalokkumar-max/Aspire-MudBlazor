@@ -1,0 +1,81 @@
+﻿@page "/lead"
+@using MudBlazor
+@rendermode InteractiveServer
+<MudPaper Class="p-4" Elevation="4">
+    <MudForm @ref="_form" >
+    <MudStack Spacing="2">
+        <!-- Dropdown with Id/Name -->
+        <MudSelect T="int" Label="Select a Template" @bind-Value="selectedId" Required="true" RequiredError="Please select an option">
+            @if (DropdownOptions.Count > 0)
+            {
+                @foreach (var item in DropdownOptions)
+                {
+                    <MudSelectItem Value="@item.Id">@item.Name</MudSelectItem>
+                }
+            }
+            else
+            {
+                <MudSelectItem Value="0">-- No options available --</MudSelectItem>
+            }
+        </MudSelect>
+
+        <!-- Input -->
+        <MudTextField Label="Please paste html body" @bind-Value="message" Required="true" RequiredError="Please paste html body" />
+
+        <!-- Submit Button -->
+        <MudButton Color="Color.Primary" OnClick="Submit">
+            Submit
+        </MudButton>
+
+        <!-- Output -->
+        @if (!string.IsNullOrWhiteSpace(result))
+        {
+            <MudAlert Severity="Severity.Info">@result</MudAlert>
+        }
+    </MudStack>
+    </MudForm>
+</MudPaper>
+
+@code {
+    private int selectedId;
+    private string message;
+    private string result;
+    private MudForm? _form;
+    // Dropdown data source
+    public List<DropdownItem> DropdownOptions { get; set; } = [];
+    protected override void OnInitialized()
+    {
+
+        // Populate dropdown
+
+        DropdownOptions = new()
+        {
+            new DropdownItem { Id = 1, Name = "C3-SAVGS-AAV",ExtractionField = "Enquiry Id, Guid, Customer Name, Email, Telephone, Address, Date, Time, Like to receive latest news and Research from Savills?, Property ID, URL, Rent, Address 1, Address 2, Office name" },
+            new DropdownItem { Id = 2, Name = "C3-SAVGS-CA",ExtractionField = "Enquiry Id, Guid, Customer Name, Email Address, Telephone Number, Address, Enquiry, Like to receive latest news and Research from Savills?, Property ID, URL, Rent, Address 1, Address 2, Office name"  },
+            new DropdownItem { Id = 3, Name = "SAV-TTU",ExtractionField = "Name, Recipients Email, Submitters Email, Company, Contact Number, Contact Method, Profession, Wish to receive newsletter, Enquiry"  },
+            new DropdownItem { Id = 4, Name = "SAVVX1",ExtractionField = "Name, Email, Telephone, Source, Enquiry, Subscribe"  },
+            new DropdownItem { Id = 5, Name = "MKT-CLP",ExtractionField = "Project Name, Client Name, Email Address, Phone Number, Do you wish to receive emails, Special Preferences or Questions"  },
+            new DropdownItem { Id = 6, Name = "MKT-PRJ",ExtractionField = "First Name, Last Name, Telephone, Email, Source, Enquiry"  }
+        };
+
+        // Default selected
+        selectedId = DropdownOptions.First().Id;
+    }
+
+    private void Submit()
+    {
+        _form.Validate();
+        if (_form.IsValid)
+        {
+            var selected = DropdownOptions.FirstOrDefault(x => x.Id == selectedId);
+            result = $"Selected: {selected?.Name ?? "None"} (ID: {selectedId}), Message: {message}";
+        }
+    }
+    
+    public class DropdownItem
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string ExtractionField { get; set; }
+    }
+}
