@@ -2,38 +2,56 @@
 @using MudBlazor
 @rendermode InteractiveServer
 <MudPaper Class="p-4" Elevation="4">
-    <MudForm @ref="_form" >
-    <MudStack Spacing="2">
-        <!-- Dropdown with Id/Name -->
-        <MudSelect T="int" Label="Select a Template" @bind-Value="selectedId" Required="true" RequiredError="Please select an option">
-            @if (DropdownOptions.Count > 0)
-            {
-                @foreach (var item in DropdownOptions)
+    <MudForm @ref="_form">
+        <MudStack Spacing="2">
+            <!-- Dropdown with Id/Name -->
+            <MudSelect T="int" Label="Select a Template" @bind-Value="selectedId" Required="true" RequiredError="Please select an option">
+                @if (DropdownOptions.Count > 0)
                 {
-                    <MudSelectItem Value="@item.Id">@item.Name</MudSelectItem>
+                    @foreach (var item in DropdownOptions)
+                    {
+                        <MudSelectItem Value="@item.Id">@item.Name</MudSelectItem>
+                    }
                 }
-            }
-            else
+                else
+                {
+                    <MudSelectItem Value="0">-- No options available --</MudSelectItem>
+                }
+            </MudSelect>
+            <!-- Input -->
+            <MudTextField Label="Please paste html body" @bind-Value="message" Required="true" Lines="3" RequiredError="Please paste html body"/>
+            <!-- Submit Button -->
+            <MudButton Color="Color.Primary" OnClick="Submit">
+                Submit
+            </MudButton>
+
+            <!-- Output -->
+            @if (!string.IsNullOrWhiteSpace(result))
             {
-                <MudSelectItem Value="0">-- No options available --</MudSelectItem>
+                <MudAlert Severity="Severity.Info">@result</MudAlert>
             }
-        </MudSelect>
-
-        <!-- Input -->
-        <MudTextField Label="Please paste html body" @bind-Value="message" Required="true" RequiredError="Please paste html body" />
-
-        <!-- Submit Button -->
-        <MudButton Color="Color.Primary" OnClick="Submit">
-            Submit
-        </MudButton>
-
-        <!-- Output -->
-        @if (!string.IsNullOrWhiteSpace(result))
-        {
-            <MudAlert Severity="Severity.Info">@result</MudAlert>
-        }
-    </MudStack>
+        </MudStack>
     </MudForm>
+</MudPaper>
+<MudDivider Class="my-4" />
+<MudPaper>
+    @if (selectedId != null)
+    {
+        <MudTable Items="filteredFields" Bordered="true">
+            <RowTemplate>
+                <MudTd>@context</MudTd>
+                <MudTd>@(enquiryData.TryGetValue(context, out var value) ? value : "-")</MudTd>
+            </RowTemplate>
+        </MudTable>
+    }
+</MudPaper>
+<MudDivider Class="my-4" />
+
+<MudPaper Class="pa-4">
+    <MudText Typo="Typo.subtitle1">Rendered HTML:</MudText>
+    <div class="mt-2" style="border:1px solid #ccc;padding:10px;" @key="PreviewKey">
+        @((MarkupString)HtmlContentPreview)
+    </div>
 </MudPaper>
 
 @code {
@@ -41,6 +59,8 @@
     private string message;
     private string result;
     private MudForm? _form;
+    private string HtmlContentPreview = "";
+    private Guid PreviewKey = Guid.NewGuid(); // Forces re-render
     // Dropdown data source
     public List<DropdownItem> DropdownOptions { get; set; } = [];
     protected override void OnInitialized()
@@ -61,21 +81,67 @@
         // Default selected
         selectedId = DropdownOptions.First().Id;
     }
-
+    private List<string> filteredFields;
     private void Submit()
     {
         _form.Validate();
         if (_form.IsValid)
         {
             var selected = DropdownOptions.FirstOrDefault(x => x.Id == selectedId);
-            result = $"Selected: {selected?.Name ?? "None"} (ID: {selectedId}), Message: {message}";
+            result = $"Selected Template: {selected?.Name ?? "None"}";
+            HtmlContentPreview = message;
+
+            filteredFields = selected?.ExtractionField
+        .Split(",", StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+        .ToList() ?? new();
         }
     }
-    
+
     public class DropdownItem
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public string ExtractionField { get; set; }
     }
+
+
+    private Dictionary<string, string> enquiryData = new()
+    {
+        { "Enquiry Id", "ENQ12345" },
+        { "Guid", "b12a5f0c-91a2-421d-abc3-4e97ab5d33e3" },
+        { "Customer Name", "Pankaj Barnawal" },
+        { "Email", "pankaj.kumar@savills.in" },
+        { "Email Address", "pankaj.kumar@savills.in" },
+        { "Telephone", "6592276559" },
+        { "Telephone Number", "6592276559" },
+        { "Phone Number", "6592276559" },
+        { "Address", "123 Example Street, City" },
+        { "Date", "2025-08-05" },
+        { "Time", "10:30 AM" },
+        { "Like to receive latest news and Research from Savills?", "Yes" },
+        { "Property ID", "PROP98765" },
+        { "URL", "https://example.com/property/98765" },
+        { "Rent", "$3,000/month" },
+        { "Address 1", "Block A, Building 1" },
+        { "Address 2", "2nd Floor, Office 202" },
+        { "Office name", "Savills India Pvt Ltd" },
+        { "Enquiry", "Looking for office space in Bangalore" },
+        { "Name", "John Doe" },
+        { "Recipients Email", "john@example.com" },
+        { "Submitters Email", "agent@example.com" },
+        { "Company", "Acme Corp" },
+        { "Contact Number", "1234567890" },
+        { "Contact Method", "Phone" },
+        { "Profession", "Engineer" },
+        { "Wish to receive newsletter", "Yes" },
+        { "Source", "Meta" },
+        { "Subscribe", "Yes" },
+        { "Project Name", "Odin Hills" },
+        { "Client Name", "Test Client" },
+        { "Do you wish to receive emails", "No" },
+        { "Special Preferences or Questions", "None" },
+        { "First Name", "Pankaj" },
+        { "Last Name", "Barnawal" }
+    };
+
 }

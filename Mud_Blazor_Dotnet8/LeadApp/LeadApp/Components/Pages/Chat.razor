@@ -1,0 +1,96 @@
+﻿@page "/chat"
+@rendermode InteractiveServer
+
+<PageTitle>Chat</PageTitle>
+<MudContainer Class="mt-16 chat_container" MaxWidth="MaxWidth.Medium">
+    <MudChat ChatPosition="ChatBubblePosition.End">
+        <MudChatHeader Name="Alok" Time="12:46" />
+    <MudChatBubble>
+        You underestimate my power!
+    </MudChatBubble>
+</MudChat>
+    <MudChat ChatPosition="ChatBubblePosition.Start" Color="Color.Transparent">
+    <MudChatBubble>
+        It's over Anakin
+    </MudChatBubble>
+    <MudChatBubble>
+        I have the high ground.
+    </MudChatBubble>
+        <MudChatFooter Text="Seen at 12:46" />
+</MudChat>
+<MudChat ChatPosition="ChatBubblePosition.End">
+        <MudChatHeader Name="Alok" Time="12:46" />
+    <MudChatBubble>
+        You underestimate my power!
+    </MudChatBubble>
+</MudChat>
+    <MudChat ChatPosition="ChatBubblePosition.Start" Color="Color.Transparent">
+        <MudChatBubble Class="bg-white">
+        You underestimate my power!
+    </MudChatBubble>
+        <MudChatFooter Text="Seen at 12:46" />
+</MudChat>
+
+<MudChat ChatPosition="ChatBubblePosition.End">
+        <MudChatHeader Name="Alok" Time="12:46" />
+    <MudChatBubble>
+        You underestimate my power!
+    </MudChatBubble>
+</MudChat>
+    <MudChat ChatPosition="ChatBubblePosition.Start" Color="Color.Transparent">
+        <MudChatBubble Class="bg-white">
+            You underestimate my power!
+        </MudChatBubble>
+        <MudChatFooter Text="Seen at 12:46" />
+</MudChat>
+<MudGrid Class="mud-elevation-0 mb-10 mt-3">
+        <MudItem xs="12" sm="12" Class="justify-center mud-width-full mud-elevation-0 background-color-none">
+            <MudPaper Class="background-color-none" Elevation="0">
+                <MudText Align="Align.Center"  Typo="Typo.h5">Hey, what’s on your mind today?</MudText>
+            </MudPaper>
+    </MudItem>
+</MudGrid>
+    <MudGrid Class="pa-4 mud-elevation-0 border-4 rounded-b-xl rounded-l-xl rounded-s-xl rounded-br-xl rounded-be-xl rounded-tr-xl rounded-te-xl">
+        <MudItem xs="12" sm="12" Class="mud-elevation-0 pt-0 pl-0">
+            <MudPaper Class="mud-elevation-0 background-color-none" Elevation="0">
+                <MudTextField T="string"
+                              Label=""
+                              Variant="Variant.Filled"
+                              Lines="2"
+                              MaxLines="8"
+                              Placeholder="Type your message here..."
+                              AutoGrow="true"
+                              @bind-Value="MessageText" />
+
+                @code {
+                    private string MessageText { get; set; }
+                }
+        </MudPaper>
+    </MudItem>
+        <MudItem xs="6" sm="6" Class="pt-0 pl-0 mud-elevation-0 chatsend_left background-color-none">
+            <MudPaper Class="justify-center mud-width-full mud-elevation-0 background-color-none" Elevation="0">
+                <MudIconButton Icon="@Icons.Material.Filled.Share" Disabled="true" aria-label="share" />
+            </MudPaper>
+    </MudItem>
+        <MudItem xs="6" sm="6" Class="pt-0 pl-0 mud-elevation-0 chatsend_right background-color-none">
+            <MudPaper Class="d-flex align-end justify-end mud-width-full mud-elevation-0 background-color-none" Elevation="0">
+                <MudIconButton Icon="@Icons.Material.Filled.Add" @onclick="OnAddClick" aria-label="Add" />
+                <MudIconButton Icon="@Icons.Material.Filled.KeyboardVoice" @onclick="OnVoiceClick" aria-label="Voice" />
+                <MudIconButton Icon="@Icons.Material.Outlined.ArrowUpward" @onclick="OnVoiceClick" aria-label="Send" />
+            </MudPaper>
+    </MudItem>    
+</MudGrid>
+</MudContainer>
+@code {
+    private void OnAddClick()
+    {
+        // Your logic here
+        Console.WriteLine("Add clicked");
+    }
+
+    private void OnVoiceClick()
+    {
+        // Your logic here
+        Console.WriteLine("Voice clicked");
+    }
+}
