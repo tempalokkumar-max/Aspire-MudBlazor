@@ -13,7 +13,7 @@ a, .btn-link {
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 .content {
@@ -29,11 +29,11 @@ h1:focus {
 }
 
 .invalid {
-    outline: 1px solid #e50000;
+    outline: 1px solid #e51620;
 }
 
 .validation-message {
-    color: #e50000;
+    color: #e51620;
 }
 
 .blazor-error-boundary {
@@ -46,6 +46,71 @@ h1:focus {
         content: "An error has occurred."
     }
 
-.darker-border-checkbox.form-check-input {
-    border-color: #929292;
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+    color: var(--bs-secondary-color);
+    text-align: end;
 }
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+    text-align: start;
+}
+
+.chat_container {
+    padding: 0 10em 0 10em;
+}
+
+.lead_container {
+    padding: 0 1em 0 1em;
+}
+
+.chatsend_left, .chatsend_right {
+    background-color: none;
+}
+
+.background-color-none {
+    background-color: none;
+}
+
+.bg-white {
+    color: #25273a;
+    background-color: #fff;
+}
+
+.chat_history {
+    width: 30em;
+}
+
+.chat_content {
+    width: 60em;
+}
+
+.received_msg_action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img.ai-linkicon {
+    max-width: 30px;
+    margin: 0px 3px 0px 3px;
+    cursor: pointer;
+    background: #f8f4f2 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+    img.ai-linkicon:hover {
+        background: #F0EFED 0% 0% no-repeat padding-box;
+        opacity: 1;
+        border-radius: 50%;
+        padding: 5px;
+    }
+
+.received_msg_icon {
+    margin-bottom: 5px;
+}
+
+    .received_msg_icon img {
+        max-width: 20px;
+    }

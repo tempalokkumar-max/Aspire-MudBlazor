@@ -2,18 +2,30 @@
 @attribute [StreamRendering]
 
 <PageTitle>Weather</PageTitle>
-
-<h1>Weather</h1>
-
-<p>This component demonstrates showing data.</p>
+<MudGrid>
+    <MudItem xs="12">
+        <MudPaper Class="d-flex align-center justify-center mud-width-full py-8" Elevation="0">
+            <MudText Align="Align.Center" Typo="Typo.h5">Weather</MudText>           
+        </MudPaper>
+        <MudPaper Class="d-flex align-center justify-center mud-width-full" Elevation="0">
+            <MudText Typo="Typo.body2">This component demonstrates showing data.</MudText>
+        </MudPaper>
+    </MudItem>    
+</MudGrid>
 
 @if (forecasts == null)
 {
-    <p><em>Loading...</em></p>
+    <MudGrid>
+        <MudItem xs="12" Elevation="2">
+            <MudPaper Class="d-flex align-center justify-center mud-width-full py-8" Elevation="0">
+                <MudText Align="Align.Center" Typo="Typo.h5">Loading...</MudText>
+            </MudPaper>           
+        </MudItem>        
+    </MudGrid>
 }
 else
 {
-    <table class="table">
+    <MudSimpleTable Dense="@dense" Hover="@hover" Bordered="@bordered" Striped="@striped" Style="overflow-x: auto;">
         <thead>
             <tr>
                 <th>Date</th>
@@ -33,11 +45,15 @@ else
                 </tr>
             }
         </tbody>
-    </table>
+    </MudSimpleTable>
 }
 
 @code {
     private WeatherForecast[]? forecasts;
+    private bool dense = false;
+    private bool hover = true;
+    private bool striped = false;
+    private bool bordered = false;
 
     protected override async Task OnInitializedAsync()
     {
