@@ -114,3 +114,42 @@ img.ai-linkicon {
     .received_msg_icon img {
         max-width: 20px;
     }
+
+.text_right {
+    text-align: right;
+}
+.reply_icon{
+    max-width:20px;
+}
+.mud-chat {
+    display: grid;
+    column-gap: 0rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    border-radius: var(--mud-default-borderradius);
+}
+.message_bottom {
+
+/*    border-image: linear-gradient(to bottom, #E0E0E0, #F5F5F5);*/
+/*    border-image-slice: 1;*/  
+    position: relative;
+    background-color: #efefef;
+    background-color: #fff;
+    border-radius: 28px;
+    box-shadow: #f1eeee 0 0 0 5px inset;
+    transform: none;
+    transform-origin: 50% 50% 0px;
+    margin-top: 20px;
+    margin-bottom: 10px
+}
+.control_area{
+
+}
+.custom_grid {
+    width: calc(100%) !important;
+    margin-left: 0px !important;
+}
+.message_area {
+    height: calc(100vh - 255px);
+    overflow: scroll;
+}
