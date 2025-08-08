@@ -5,11 +5,11 @@
 <MudGrid Class="mt-1">
     @* Form Element *@
     <MudItem xs="12" sm="6">
-        <MudPaper Class="p-4 pa-4 " Elevation="4">           
+        <MudPaper Class="p-4 pa-4 lead_form" Elevation="4">
             <MudForm @ref="_form">
                 <MudStack Spacing="2">
                     <!-- Dropdown with Id/Name -->
-                    <MudSelect T="int" Label="Select a Template" @bind-Value="selectedId" Required="true" RequiredError="Please select an option">
+                    <MudSelect T="int" Label="Select a Template" @bind-Value="selectedId" Required="true" RequiredError="Please select an option" Variant="Variant.Outlined">
                         @if (DropdownOptions.Count > 0)
                         {
                             @foreach (var item in DropdownOptions)
@@ -23,11 +23,11 @@
                         }
                     </MudSelect>
                     <!-- Input -->
-                    <MudTextField Label="Please paste html body" @bind-Value="message" Required="true" Lines="3" RequiredError="Please paste html body" />
+                    <MudTextField Label="Please paste html body" @bind-Value="message" Required="true" Lines="3" RequiredError="Please paste html body" Variant="Variant.Outlined" />
                     <!-- Submit Button -->
-                    <MudButton Color="Color.Primary" OnClick="Submit">
+                    <MudButton Variant="Variant.Filled" OnClick="Submit">
                         Submit
-                    </MudButton>
+                    </MudButton>                   
                     <!-- Output -->
                     @* @if (!string.IsNullOrWhiteSpace(result))
                     {
@@ -38,7 +38,7 @@
         </MudPaper>   
     </MudItem>
     <MudItem xs="12" sm="6">
-        <MudPaper Class="p-4 pa-4 " Elevation="4">           
+        <MudPaper Class="p-4 pa-4 lead_form_alert" Elevation="4">
             <MudForm @ref="_form">
                 <MudStack Spacing="2">                  
                     <!-- Output -->

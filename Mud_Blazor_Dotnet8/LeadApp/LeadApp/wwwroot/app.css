@@ -154,12 +154,12 @@ img.ai-linkicon {
     overflow: scroll;
 }
 .lead_form_alert {
-    min-height: 16em !important;
-    max-height: 16em !important;
+    min-height: 18em !important;
+    max-height: 18em !important;
     overflow: scroll;
 }
 .lead_form {
-    min-height: 16em !important;
-    max-height: 16em !important;
+    min-height: 18em !important;
+    max-height: 18em !important;
     overflow: scroll;
 }
