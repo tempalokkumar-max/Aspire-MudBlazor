@@ -153,3 +153,13 @@ img.ai-linkicon {
     height: calc(100vh - 255px);
     overflow: scroll;
 }
+.lead_form_alert {
+    min-height: 16em !important;
+    max-height: 16em !important;
+    overflow: scroll;
+}
+.lead_form {
+    min-height: 16em !important;
+    max-height: 16em !important;
+    overflow: scroll;
+}
