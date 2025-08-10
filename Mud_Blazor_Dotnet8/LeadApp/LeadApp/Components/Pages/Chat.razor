@@ -16,8 +16,10 @@
         </MudDrawer> *@
         @* <div class="message_area"> *@
             <MudContainer Class="chat_container" MaxWidth="MaxWidth.Medium">
-            <div class="message_area">
-                @* Chat section start *@
+            @if (_showChat)
+            {
+                <div class="message_area" >
+                    @* Chat section start *@
                 @* chat 01*@
                 <MudChat Color="_selectedColor" Dense="@_dense" Elevation="@_elevation" Variant="@_variant" Square="_square" ArrowPosition="_selectedArrowPosition" ChatPosition="ChatBubblePosition.End">
                     <MudChatHeader Name="Alok" Time="12:46" />                    
@@ -48,7 +50,7 @@
                         <MudIconButton Icon="@Icons.Material.Filled.ThumbDownAlt" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
                         <MudIconButton Icon="@Icons.Material.Filled.ContentCopy" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
                         <MudIconButton Icon="@Icons.Material.Filled.Cached" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
-                        <MudIconButton Icon="@Icons.Material.Filled.Cached" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                            <MudIconButton Icon="@Icons.Material.Sharp.MoreVert" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
                     </MudItem>
                 </MudGrid>
                 @* /chat 01*@
@@ -83,7 +85,7 @@
                         <MudIconButton Icon="@Icons.Material.Filled.ThumbDownAlt" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
                         <MudIconButton Icon="@Icons.Material.Filled.ContentCopy" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
                         <MudIconButton Icon="@Icons.Material.Filled.Cached" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
-                        <MudIconButton Icon="@Icons.Material.Filled.Cached" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />                       
+                            <MudIconButton Icon="@Icons.Material.Sharp.MoreVert" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
                     </MudItem>
                 </MudGrid>
                 @* chat 02*@
@@ -149,7 +151,7 @@
                         <MudIconButton Icon="@Icons.Material.Filled.ThumbDownAlt" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
                         <MudIconButton Icon="@Icons.Material.Filled.ContentCopy" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
                         <MudIconButton Icon="@Icons.Material.Filled.Cached" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
-                        <MudIconButton Icon="@Icons.Material.Filled.Cached" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                            <MudIconButton Icon="@Icons.Material.Sharp.MoreVert" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
                     </MudItem>
                 </MudGrid>
 
@@ -199,7 +201,7 @@
                         <MudIconButton Icon="@Icons.Material.Filled.ThumbDownAlt" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
                         <MudIconButton Icon="@Icons.Material.Filled.ContentCopy" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
                         <MudIconButton Icon="@Icons.Material.Filled.Cached" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
-                        <MudIconButton Icon="@Icons.Material.Filled.Cached" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                            <MudIconButton Icon="@Icons.Material.Sharp.MoreVert" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
                     </MudItem>
                 </MudGrid>
                 @* /card chat 02*@
@@ -268,26 +270,29 @@
                         <MudIconButton Icon="@Icons.Material.Filled.ThumbDownAlt" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
                         <MudIconButton Icon="@Icons.Material.Filled.ContentCopy" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
                         <MudIconButton Icon="@Icons.Material.Filled.Cached" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
-                        <MudIconButton Icon="@Icons.Material.Filled.Cached" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                            <MudIconButton Icon="@Icons.Material.Sharp.MoreVert" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
                     </MudItem>
                 </MudGrid>
 
                 @* /card chat 03*@
                 @* chat section end *@
                 </div>
-
+                }
             <div class="control_area">
-                <MudGrid Class="mud-elevation-0 mb-10 mt-3 custom_grid">
-                    <MudItem xs="12" sm="12" Class="justify-center mud-width-full mud-elevation-0 background-color-none">
-                        <MudPaper Class="background-color-none" Elevation="0">
-                            <MudText Align="Align.Center" Typo="Typo.h5">Hey, what’s on your mind today?</MudText>
-                        </MudPaper>
-                    </MudItem>
-                </MudGrid>
+                @if (showDiv)
+                {
+                    <MudGrid Class="mud-elevation-0 mb-10 mt-3 custom_grid">
+                        <MudItem xs="12" sm="12" Class="justify-center mud-width-full mud-elevation-0 background-color-none">
+                            <MudPaper Class="background-color-none" Elevation="0">
+                                <MudText Align="Align.Center" Typo="Typo.h5">Hey, what’s on your mind today?</MudText>
+                            </MudPaper>
+                        </MudItem>
+                    </MudGrid>
+                }
                 <MudGrid Class="pa-4 mud-elevation-0 custom_grid message_bottom">
                     <MudItem xs="12" sm="12" Class="mud-elevation-0 pt-0 pl-0">
                         <MudPaper Class="mud-elevation-0 background-color-none" Elevation="0">
-                            <MudTextField  T="string" Label="" Variant="Variant.Text" Lines="2" MaxLines="8" Placeholder="Type your message here..." AutoGrow="true" @bind-Value="MessageText" />
+                            <MudTextField T="string" Label="" Variant="Variant.Text" Lines="2" MaxLines="8" Placeholder="Type your message here..." AutoGrow="true" @bind-Value="userInput" />
                         </MudPaper>
                     </MudItem>
                     <MudItem xs="6" sm="6" Class="pt-0 pl-0 mud-elevation-0 chatsend_left background-color-none">
@@ -299,7 +304,7 @@
                         <MudPaper Class="d-flex align-end justify-end mud-width-full mud-elevation-0 background-color-none" Elevation="0">
                             <MudIconButton Icon="@Icons.Material.Filled.Add" @onclick="OnAddClick" aria-label="Add" />
                             <MudIconButton Icon="@Icons.Material.Filled.KeyboardVoice" @onclick="OnVoiceClick" aria-label="Voice" />
-                            <MudIconButton Icon="@Icons.Material.Outlined.ArrowUpward" @onclick="OnVoiceClick" aria-label="Send" />
+                            <MudIconButton Icon="@Icons.Material.Outlined.ArrowUpward" @onclick="SendQuery" aria-label="Send" />
                         </MudPaper>
                     </MudItem>
                 </MudGrid>
@@ -312,20 +317,6 @@
 
 @code
 {
-
-    [Inject] private IDialogService DialogService { get; set; }
-
-    string state = "Message box hasn't been opened yet";
-
-    private async void OnButtonClicked()
-    {
-        bool? result = await DialogService.ShowMessageBox(
-            "Warning",
-            "Deleting can not be undone!",
-            yesText: "Delete!", cancelText: "Cancel");
-        state = result == null ? "Canceled" : "Deleted!";
-        StateHasChanged();
-    }
     private bool _openStart = false;
     private bool _openEnd = false;
     private bool _open = false;
@@ -340,6 +331,28 @@
     private Variant _oVariant = Variant.Outlined;
     private Color _selectedColor = Color.Default;
     private ChatArrowPosition _selectedArrowPosition = ChatArrowPosition.None;
+    private bool showDiv = true;
+    private string userInput;
+
+    private bool arrows = true;
+    private bool bullets = false;
+    private bool enableSwipeGesture = true;
+    private bool autocycle = true;
+    private Transition transition = Transition.Slide;
+
+    [Inject] private IDialogService DialogService { get; set; }
+    [Inject] IJSRuntime JS { get; set; }
+    string state = "Message box hasn't been opened yet";
+
+    private async void OnButtonClicked()
+    {
+        bool? result = await DialogService.ShowMessageBox(
+            "Warning",
+            "Deleting can not be undone!",
+            yesText: "Delete!", cancelText: "Cancel");
+        state = result == null ? "Canceled" : "Deleted!";
+        StateHasChanged();
+    }
 
     [CascadingParameter]
     public bool Rtl { get; set; }
@@ -376,10 +389,15 @@
     {
         _showChat = !_showChat;
     }
-    private bool arrows = true;
-    private bool bullets = false;
-    private bool enableSwipeGesture = true;
-    private bool autocycle = true;
-    private Transition transition = Transition.Slide;
+
+    private void SendQuery()
+    {
+        // You can add validation or logic here
+        if (!string.IsNullOrWhiteSpace(userInput))
+        {
+            showDiv = false;
+            _showChat = true;
+        }
+    }
 
 }
