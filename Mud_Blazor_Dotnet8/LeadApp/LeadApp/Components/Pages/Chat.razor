@@ -6,14 +6,16 @@
     <MudIconButton Icon="@Icons.Material.Rounded.MarkChatRead" Disabled="false" aria-label="history" OnClick="@ToggleStartDrawer" />
 
     <MudDrawerContainer Class="mud-height-full">
-        @* <MudDrawer @bind-Open="@_openStart" Width="250px" Fixed="false" Anchor="Anchor.Start" Elevation="0" Variant="@DrawerVariant.Persistent" Class="z-10">
+        <MudDrawer @bind-Open="@_openStart" Width="250px" Fixed="false" Anchor="Anchor.Start" Elevation="0" Variant="@DrawerVariant.Persistent" Class="z-10">
             <MudDrawerHeader>
-                <MudText Typo="Typo.h6">History</MudText>
+                @* <MudText Typo="Typo.h6">History</MudText> *@
+                <ChatHistory Messages="@childMessage" UserData="@chatHistories"></ChatHistory>
+
             </MudDrawerHeader>
+           @*  <MudChip T="string">@state</MudChip>
             <MudChip T="string">@state</MudChip>
-            <MudChip T="string">@state</MudChip>
-            <MudChip T="string">@state</MudChip>
-        </MudDrawer> *@
+            <MudChip T="string">@state</MudChip> *@
+        </MudDrawer>
         @* <div class="message_area"> *@
             <MudContainer Class="chat_container" MaxWidth="MaxWidth.Medium">
             @if (_showChat)
@@ -21,11 +23,12 @@
                 <div class="message_area" >
                     @* Chat section start *@
                 @* chat 01*@
-                <MudChat Color="_selectedColor" Dense="@_dense" Elevation="@_elevation" Variant="@_variant" Square="_square" ArrowPosition="_selectedArrowPosition" ChatPosition="ChatBubblePosition.End">
+                    
+               @*  <MudChat Color="_selectedColor" Dense="@_dense" Elevation="@_elevation" Variant="@_variant" Square="_square" ArrowPosition="_selectedArrowPosition" ChatPosition="ChatBubblePosition.End">
                     <MudChatHeader Name="Alok" Time="12:46" />                    
                     <MudChatBubble>You wish you knew or did when you bought your first commercial property? </MudChatBubble>
                     <MudChatFooter Text="Seen at 12:46" />
-                </MudChat>
+                </MudChat> *@
 
                 <MudChat Color="_selectedColor" Dense="@_dense" Elevation="@_elevation" Variant="@_oVariant" Square="_square" ArrowPosition="_selectedArrowPosition" ChatPosition="ChatBubblePosition.Start">
                     <MudChatHeader><img class="reply_icon" src="/assets/images/icon/ai-research.svg"></MudChatHeader>
@@ -273,9 +276,25 @@
                             <MudIconButton Icon="@Icons.Material.Sharp.MoreVert" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
                     </MudItem>
                 </MudGrid>
-
+               
                 @* /card chat 03*@
                 @* chat section end *@
+
+                    @foreach (var msg in childMessage)
+                    {
+                        <MudChat Color="_selectedColor" Dense="@_dense" Elevation="@_elevation" Variant="@_variant" Square="_square" ArrowPosition="_selectedArrowPosition" ChatPosition="ChatBubblePosition.End">
+                            @*  <MudChatHeader Name="Alok" Time="12:46" /> *@
+                            <MudChatBubble>@msg</MudChatBubble>
+                            <MudChatFooter Text="Seen at 12:46" />
+                        </MudChat>
+
+                        <MudChat Color="_selectedColor" Dense="@_dense" Elevation="@_elevation" Variant="@_oVariant" Square="_square" ArrowPosition="_selectedArrowPosition" ChatPosition="ChatBubblePosition.Start">
+                            <MudChatBubble>
+                                Brought bigger buildings and larger sites all close to each other
+                            </MudChatBubble>
+                            <MudChatFooter Text="Seen at 12:46" />
+                        </MudChat>
+                    }
                 </div>
                 }
             <div class="control_area">
@@ -289,25 +308,7 @@
                         </MudItem>
                     </MudGrid>
                 }
-                <MudGrid Class="pa-4 mud-elevation-0 custom_grid message_bottom">
-                    <MudItem xs="12" sm="12" Class="mud-elevation-0 pt-0 pl-0">
-                        <MudPaper Class="mud-elevation-0 background-color-none" Elevation="0">
-                            <MudTextField T="string" Label="" Variant="Variant.Text" Lines="2" MaxLines="8" Placeholder="Type your message here..." AutoGrow="true" @bind-Value="userInput" />
-                        </MudPaper>
-                    </MudItem>
-                    <MudItem xs="6" sm="6" Class="pt-0 pl-0 mud-elevation-0 chatsend_left background-color-none">
-                        <MudPaper Class="justify-center mud-width-full mud-elevation-0 background-color-none" Elevation="0">
-                            <MudIconButton Icon="@Icons.Material.Filled.Share" Disabled="true" aria-label="share" />
-                        </MudPaper>
-                    </MudItem>
-                    <MudItem xs="6" sm="6" Class="pt-0 pl-0 mud-elevation-0 chatsend_right background-color-none">
-                        <MudPaper Class="d-flex align-end justify-end mud-width-full mud-elevation-0 background-color-none" Elevation="0">
-                            <MudIconButton Icon="@Icons.Material.Filled.Add" @onclick="OnAddClick" aria-label="Add" />
-                            <MudIconButton Icon="@Icons.Material.Filled.KeyboardVoice" @onclick="OnVoiceClick" aria-label="Voice" />
-                            <MudIconButton Icon="@Icons.Material.Outlined.ArrowUpward" @onclick="SendQuery" aria-label="Send" />
-                        </MudPaper>
-                    </MudItem>
-                </MudGrid>
+               <ChatInputArea Message="" OnMessageSent="ReceiveMessageFromChild" />
                 </div>
 
             </MudContainer>
@@ -343,6 +344,12 @@
     [Inject] private IDialogService DialogService { get; set; }
     [Inject] IJSRuntime JS { get; set; }
     string state = "Message box hasn't been opened yet";
+
+    ChatHistory.HistoryModel chatHistories = new ChatHistory.HistoryModel
+    {
+        Name = "Pankaj",
+        Age = 30
+    };
 
     private async void OnButtonClicked()
     {
@@ -399,5 +406,15 @@
             _showChat = true;
         }
     }
+    private List<string> childMessage = new List<string> { "" };
 
+    private void ReceiveMessageFromChild(string message)
+    {
+        childMessage.Add(message);
+        if (!string.IsNullOrWhiteSpace(message))
+        {
+            showDiv = false;
+            _showChat = true;
+        }
+    }
 }
