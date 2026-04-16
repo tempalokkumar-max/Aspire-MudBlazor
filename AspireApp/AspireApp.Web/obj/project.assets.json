@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net10.0": {
-      "Microsoft.AspNetCore.App.Internal.Assets/10.0.1": {
+      "Microsoft.AspNetCore.App.Internal.Assets/10.0.5": {
         "type": "package",
         "build": {
           "build/Microsoft.AspNetCore.App.Internal.Assets.props": {},
@@ -440,10 +440,10 @@
     }
   },
   "libraries": {
-    "Microsoft.AspNetCore.App.Internal.Assets/10.0.1": {
-      "sha512": "rafnWkNfJPA0nCZ5u9bFLiIhCv+aGDWBPJMejuROFMHEpsNhTdv8Cvhv+2jIH+b5485FhndbiwOQJUBMeBa6BQ==",
+    "Microsoft.AspNetCore.App.Internal.Assets/10.0.5": {
+      "sha512": "Oxw9Ps1/nd6c/EMCAI13AeJFEqXezAvCEOshMjUWmL7LeGirHJNzytR2e/3jINYg0j2TmPvNUowGHf+gp8zDSQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.app.internal.assets/10.0.1",
+      "path": "microsoft.aspnetcore.app.internal.assets/10.0.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -459,7 +459,7 @@
         "build/Microsoft.AspNetCore.App.Internal.Assets.targets",
         "buildMultiTargeting/Microsoft.AspNetCore.App.Internal.Assets.targets",
         "buildTransitive/Microsoft.AspNetCore.App.Internal.Assets.targets",
-        "microsoft.aspnetcore.app.internal.assets.10.0.1.nupkg.sha512",
+        "microsoft.aspnetcore.app.internal.assets.10.0.5.nupkg.sha512",
         "microsoft.aspnetcore.app.internal.assets.nuspec"
       ]
     },
@@ -1075,29 +1075,29 @@
   "projectFileDependencyGroups": {
     "net10.0": [
       "AspireApp.ServiceDefaults >= 1.0.0",
-      "Microsoft.AspNetCore.App.Internal.Assets >= 10.0.1",
+      "Microsoft.AspNetCore.App.Internal.Assets >= 10.0.5",
       "MudBlazor >= 9.3.0",
       "MudBlazor.ThemeManager >= 4.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pankaj.Barnawal\\.nuget\\packages\\": {},
+    "C:\\Users\\Alok.Kumar\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ExecutableApp\\Pick Up\\Aspire\\AspireApp\\AspireApp.Web\\AspireApp.Web.csproj",
+      "projectUniqueName": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\AspireApp.Web.csproj",
       "projectName": "AspireApp.Web",
-      "projectPath": "C:\\ExecutableApp\\Pick Up\\Aspire\\AspireApp\\AspireApp.Web\\AspireApp.Web.csproj",
-      "packagesPath": "C:\\Users\\Pankaj.Barnawal\\.nuget\\packages\\",
-      "outputPath": "C:\\ExecutableApp\\Pick Up\\Aspire\\AspireApp\\AspireApp.Web\\obj\\",
+      "projectPath": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\AspireApp.Web.csproj",
+      "packagesPath": "C:\\Users\\Alok.Kumar\\.nuget\\packages\\",
+      "outputPath": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Pankaj.Barnawal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Alok.Kumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1113,8 +1113,8 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\ExecutableApp\\Pick Up\\Aspire\\AspireApp\\AspireApp.ServiceDefaults\\AspireApp.ServiceDefaults.csproj": {
-              "projectPath": "C:\\ExecutableApp\\Pick Up\\Aspire\\AspireApp\\AspireApp.ServiceDefaults\\AspireApp.ServiceDefaults.csproj"
+            "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.ServiceDefaults\\AspireApp.ServiceDefaults.csproj": {
+              "projectPath": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.ServiceDefaults\\AspireApp.ServiceDefaults.csproj"
             }
           }
         }
@@ -1129,7 +1129,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net10.0": {
@@ -1138,7 +1138,7 @@
           "Microsoft.AspNetCore.App.Internal.Assets": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[10.0.1, )",
+            "version": "[10.0.5, )",
             "autoReferenced": true
           },
           "MudBlazor": {
@@ -1169,7 +1169,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

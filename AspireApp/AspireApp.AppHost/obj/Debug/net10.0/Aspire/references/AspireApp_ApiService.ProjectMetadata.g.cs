@@ -15,5 +15,5 @@ public class AspireApp_ApiService : global::Aspire.Hosting.IProjectMetadata
     /// <summary>
     /// The path to the AspireApp_ApiService project.
     /// </summary>
-    public string ProjectPath => """C:\ExecutableApp\Pick Up\Aspire\AspireApp\AspireApp.ApiService\AspireApp.ApiService.csproj""";
+    public string ProjectPath => """C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\AspireApp\AspireApp.ApiService\AspireApp.ApiService.csproj""";
 }

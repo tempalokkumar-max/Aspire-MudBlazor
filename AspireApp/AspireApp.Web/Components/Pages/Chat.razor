@@ -13,7 +13,7 @@
     <MudIconButton Icon="@Icons.Material.Rounded.MarkChatRead" Disabled="false" aria-label="history" OnClick="@ToggleStartDrawer" />
 
     <MudDrawerContainer Class="mud-height-full">
-        <MudDrawer @bind-Open="@_openStart" Width="250px" Fixed="false" Anchor="Anchor.Start" Elevation="0" Variant="@DrawerVariant.Persistent" Class="z-10">
+        <MudDrawer @bind-Open="@_openStart" Width="250px" Fixed="false" Anchor="Anchor.Start" Elevation="0" Variant="@DrawerVariant.Persistent" Class="z-10 chat-history">
             <MudDrawerHeader>
                 @* <MudText Typo="Typo.h6">History</MudText> *@
                 <ChatHistory Messages="@childMessage" UserData="@chatHistories"></ChatHistory>
@@ -318,7 +318,7 @@
             <div class="control_area">
                 @if (showDiv)
                 {
-                    <MudGrid Class="mud-elevation-0 mb-10 mt-3 custom_grid">
+                    <MudGrid Class="mud-elevation-0 mb-10 mt-3 custom_grid ">
                         <MudItem xs="12" sm="12" Class="justify-center mud-width-full mud-elevation-0 background-color-none">
                             <MudPaper Class="background-color-none" Elevation="0">
                                 <MudText Align="Align.Center" Typo="Typo.h5">Hey, what’s on your mind today?</MudText>

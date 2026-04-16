@@ -12,21 +12,22 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("dea56143-cc94-4bc3-8fd2-7b0da974e3a2")]
-[assembly: System.Reflection.AssemblyMetadata("dcpclipath", "C:\\Users\\Pankaj.Barnawal\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\9.5" +
-    ".0\\tools\\dcp.exe")]
-[assembly: System.Reflection.AssemblyMetadata("dcpextensionpaths", "C:\\Users\\Pankaj.Barnawal\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\9.5" +
-    ".0\\tools\\ext\\")]
-[assembly: System.Reflection.AssemblyMetadata("dcpbinpath", "C:\\Users\\Pankaj.Barnawal\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\9.5" +
-    ".0\\tools\\ext\\bin\\")]
-[assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", "C:\\ExecutableApp\\Pick Up\\Aspire\\AspireApp\\AspireApp.AppHost")]
+[assembly: System.Reflection.AssemblyMetadata("dcpclipath", "C:\\Users\\Alok.Kumar\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\9.5.0\\to" +
+    "ols\\dcp.exe")]
+[assembly: System.Reflection.AssemblyMetadata("dcpextensionpaths", "C:\\Users\\Alok.Kumar\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\9.5.0\\to" +
+    "ols\\ext\\")]
+[assembly: System.Reflection.AssemblyMetadata("dcpbinpath", "C:\\Users\\Alok.Kumar\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\9.5.0\\to" +
+    "ols\\ext\\bin\\")]
+[assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.AppHost")]
 [assembly: System.Reflection.AssemblyMetadata("apphostprojectname", "AspireApp.AppHost.csproj")]
-[assembly: System.Reflection.AssemblyMetadata("aspiredashboardpath", "C:\\Users\\Pankaj.Barnawal\\.nuget\\packages\\aspire.dashboard.sdk.win-x64\\9.5.0\\tools" +
-    "\\Aspire.Dashboard.exe")]
-[assembly: System.Reflection.AssemblyMetadataAttribute("apphostprojectbaseintermediateoutputpath", "C:\\ExecutableApp\\Pick Up\\Aspire\\AspireApp\\AspireApp.AppHost\\obj\\")]
+[assembly: System.Reflection.AssemblyMetadata("aspiredashboardpath", "C:\\Users\\Alok.Kumar\\.nuget\\packages\\aspire.dashboard.sdk.win-x64\\9.5.0\\tools\\Aspi" +
+    "re.Dashboard.exe")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("apphostprojectbaseintermediateoutputpath", "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.AppHost\\obj\\" +
+    "")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("AspireApp.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78655a40c1e0f1e6a9b75349f9a3152dad23aab9")]
 [assembly: System.Reflection.AssemblyProductAttribute("AspireApp.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AspireApp.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

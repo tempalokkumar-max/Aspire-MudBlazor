@@ -5,7 +5,9 @@ html, body {
 a, .btn-link {
     color: #006bb7;
 }
-
+/*.mt-10{
+    margin-top:10px;
+}*/
 .btn-primary {
     color: #fff;
     background-color: #1b6ec2;
@@ -133,8 +135,8 @@ img.ai-linkicon {
 /*    border-image: linear-gradient(to bottom, #E0E0E0, #F5F5F5);*/
 /*    border-image-slice: 1;*/  
     position: relative;
-    background-color: #efefef;
-    background-color: #fff;
+/*    background-color: #efefef;*/
+/*    background-color: #fff;*/
     border-radius: 28px;
     box-shadow: #f1eeee 0 0 0 5px inset;
     transform: none;
@@ -162,4 +164,13 @@ img.ai-linkicon {
     min-height: 18em !important;
     max-height: 18em !important;
     overflow: scroll;
+}
+.aside-navbar {
+    z-index: 99;
+}
+.chat-history {
+    z-index: 9;
+}
+.chat-history-title{
+    width:100%;
 }

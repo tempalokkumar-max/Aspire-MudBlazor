@@ -15,5 +15,5 @@ public class AspireApp_Web : global::Aspire.Hosting.IProjectMetadata
     /// <summary>
     /// The path to the AspireApp_Web project.
     /// </summary>
-    public string ProjectPath => """C:\ExecutableApp\Pick Up\Aspire\AspireApp\AspireApp.Web\AspireApp.Web.csproj""";
+    public string ProjectPath => """C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\AspireApp\AspireApp.Web\AspireApp.Web.csproj""";
 }

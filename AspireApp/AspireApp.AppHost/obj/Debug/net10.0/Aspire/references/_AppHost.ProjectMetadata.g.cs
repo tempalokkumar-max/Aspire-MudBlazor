@@ -17,5 +17,5 @@ public class AspireApp_AppHost
     /// <summary>
     /// The path to the Aspire Host project.
     /// </summary>
-    public static string ProjectPath => """C:\ExecutableApp\Pick Up\Aspire\AspireApp\AspireApp.AppHost""";
+    public static string ProjectPath => """C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\AspireApp\AspireApp.AppHost""";
 }

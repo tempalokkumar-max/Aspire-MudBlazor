@@ -1,13 +1,26 @@
 ﻿@rendermode InteractiveServer
-<MudText Typo="Typo.h6">History</MudText>
-<div class="border p-2 rounded">
-    @* <h4>Child Component</h4>    
-    <p>User Info: @UserData.Name (Age: @UserData.Age)</p> *@
+<MudCard>
+    <MudCardContent>
+        <MudAlert Severity="Severity.Normal">History</MudAlert>
+        @* <MudText>History</MudText> *@
+        @* <MudDivider /> *@
+            @foreach (var message in Messages)
+            {
+            <MudText Typo="Typo.body2" Class="mt-2">@message </MudText>
+            <MudDivider />
+            }
+       
+    </MudCardContent>    
+</MudCard>
+
+
+@* <MudText Typo="Typo.h6" Class="chat-history-title">History</MudText><br>
+<div class="border p-2 rounded">   
     @foreach (var message in Messages)
     {
         <p>@message</p>
     }
-</div>
+</div> *@
 @code {
     [Parameter] public List<string> Messages { get; set; } = new List<string>{""};
 

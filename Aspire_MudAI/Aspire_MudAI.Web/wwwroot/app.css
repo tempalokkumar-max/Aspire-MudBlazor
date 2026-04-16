@@ -77,3 +77,34 @@ h1:focus {
 .chat_content {
     width: 60em;
 }
+
+.received_msg_action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img.ai-linkicon {
+    max-width: 30px;
+    margin: 0px 3px 0px 3px;
+    cursor: pointer;
+    background: #f8f4f2 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+    img.ai-linkicon:hover {
+        background: #F0EFED 0% 0% no-repeat padding-box;
+        opacity: 1;
+        border-radius: 50%;
+        padding: 5px;
+    }
+
+.received_msg_icon {
+    margin-bottom: 5px;
+}
+
+    .received_msg_icon img {
+        max-width: 20px;
+    }
