@@ -1,0 +1,438 @@
+﻿@page "/chat"
+@rendermode InteractiveServer
+<script>
+    window.scrollToBottom = (elementId) => {
+        var el = document.getElementById(elementId);
+        if (el) {
+            el.scrollTop = el.scrollHeight;
+        }
+    };
+</script>
+<PageTitle>Chat</PageTitle>
+<MudPaper Height="calc(100vh - 80px);margin-top: 10px;" Style="position:relative;" Elevation="0">
+    <MudIconButton Icon="@Icons.Material.Rounded.MarkChatRead" Disabled="false" aria-label="history" OnClick="@ToggleStartDrawer" />
+
+    <MudDrawerContainer Class="mud-height-full">
+        <MudDrawer @bind-Open="@_openStart" Width="250px" Fixed="false" Anchor="Anchor.Start" Elevation="0" Variant="@DrawerVariant.Persistent" Class="z-10">
+            <MudDrawerHeader>
+                @* <MudText Typo="Typo.h6">History</MudText> *@
+                <ChatHistory Messages="@childMessage" UserData="@chatHistories"></ChatHistory>
+
+            </MudDrawerHeader>
+           @*  <MudChip T="string">@state</MudChip>
+            <MudChip T="string">@state</MudChip>
+            <MudChip T="string">@state</MudChip> *@
+        </MudDrawer>
+        @* <div class="message_area"> *@
+            <MudContainer Class="chat_container" MaxWidth="MaxWidth.Medium">
+            @if (_showChat)
+            {
+                <div class="message_area" >
+                    @* Chat section start *@
+                @* chat 01*@
+                    
+               @*  <MudChat Color="_selectedColor" Dense="@_dense" Elevation="@_elevation" Variant="@_variant" Square="_square" ArrowPosition="_selectedArrowPosition" ChatPosition="ChatBubblePosition.End">
+                    <MudChatHeader Name="Alok" Time="12:46" />                    
+                    <MudChatBubble>You wish you knew or did when you bought your first commercial property? </MudChatBubble>
+                    <MudChatFooter Text="Seen at 12:46" />
+                </MudChat> *@
+
+                <MudChat Color="_selectedColor" Dense="@_dense" Elevation="@_elevation" Variant="@_oVariant" Square="_square" ArrowPosition="_selectedArrowPosition" ChatPosition="Position.Start">
+                    <MudChatHeader><img class="reply_icon" src="/assets/images/icon/ai-research.svg"></MudChatHeader>
+                    <MudChatBubble>
+                        Brought bigger buildings and larger sites all close to each other
+                    </MudChatBubble>
+                     <MudChatBubble>
+                        So much you can then do on the sites and improve income while saving the travel time with office close to all your property activities.
+                    </MudChatBubble>
+                    <MudChatBubble>
+                        If I could combine all my sites together the property operation could be run more efficiently.<br />
+                        Based on a family of three running the property operation a site with say 200 tenants , 3ha industrial buildings about 7 ha land would be ideal...not too big and not too small.<br />
+                    </MudChatBubble>
+                    <MudChatBubble Color="Color.Primary">If a property that fits in well with your current portfolio or plan then buy it.<br /> You may not get that same opportunity again for many decades later.</MudChatBubble>
+                </MudChat>
+                <MudGrid Class="mb-2">
+                    <MudItem xs="12" sm="6" Class="pl-9">
+                        6 Aug 2025 02:41 PM
+                    </MudItem>
+                    <MudItem xs="12" sm="6" Class="pr-15 text_right">
+                        <MudIconButton Icon="@Icons.Material.Filled.ThumbUpAlt" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                        <MudIconButton Icon="@Icons.Material.Filled.ThumbDownAlt" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                        <MudIconButton Icon="@Icons.Material.Filled.ContentCopy" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                        <MudIconButton Icon="@Icons.Material.Filled.Cached" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                            <MudIconButton Icon="@Icons.Material.Sharp.MoreVert" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                    </MudItem>
+                </MudGrid>
+                @* /chat 01*@
+                @* chat 02*@
+                <MudChat Color="_selectedColor" Dense="@_dense" Elevation="@_elevation" Variant="@_variant" Square="_square" ArrowPosition="_selectedArrowPosition" ChatPosition="ChatBubblePosition.End">
+                    <MudChatHeader Name="Alok" Time="12:46" />
+                    <MudChatBubble>You wish you knew or did when you bought your first commercial property? </MudChatBubble>
+                    <MudChatFooter Text="Seen at 12:46" />
+                </MudChat>
+
+                <MudChat Color="_selectedColor" Dense="@_dense" Elevation="@_elevation" Variant="@_oVariant" Square="_square" ArrowPosition="_selectedArrowPosition" ChatPosition="ChatBubblePosition.Start">
+                    <MudChatHeader><img class="reply_icon" src="/assets/images/icon/ai-research.svg"></MudChatHeader>
+                    <MudChatBubble>
+                        Brought bigger buildings and larger sites all close to each other
+                    </MudChatBubble>
+                    <MudChatBubble>
+                        So much you can then do on the sites and improve income while saving the travel time with office close to all your property activities.
+                    </MudChatBubble>
+                    <MudChatBubble>
+                        If I could combine all my sites together the property operation could be run more efficiently.<br />
+                        Based on a family of three running the property operation a site with say 200 tenants , 3ha industrial buildings about 7 ha land would be ideal...not too big and not too small.<br />
+                    </MudChatBubble>
+                    <MudChatBubble Color="Color.Primary">If a property that fits in well with your current portfolio or plan then buy it.<br /> You may not get that same opportunity again for many decades later.</MudChatBubble>
+                    <MudChatFooter Text="Seen at 12:46" />
+                </MudChat>
+                <MudGrid Class="mb-2">
+                    <MudItem xs="12" sm="6" Class="pl-9">
+                        6 Aug 2025 02:41 PM
+                    </MudItem>
+                    <MudItem xs="12" sm="6" Class="pr-15 text_right">                        
+                        <MudIconButton Icon="@Icons.Material.Filled.ThumbUpAlt" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                        <MudIconButton Icon="@Icons.Material.Filled.ThumbDownAlt" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                        <MudIconButton Icon="@Icons.Material.Filled.ContentCopy" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                        <MudIconButton Icon="@Icons.Material.Filled.Cached" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                            <MudIconButton Icon="@Icons.Material.Sharp.MoreVert" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                    </MudItem>
+                </MudGrid>
+                @* chat 02*@
+                @* card chat 01*@
+                <MudChat Color="_selectedColor" Dense="@_dense" Elevation="@_elevation" Variant="@_variant" Square="_square" ArrowPosition="_selectedArrowPosition" ChatPosition="ChatBubblePosition.End">
+                    <MudChatHeader Name="Alok" Time="12:46" />
+                    <MudChatBubble>Know How Property show in card? </MudChatBubble>
+                    <MudChatFooter Text="Seen at 12:46" />
+                </MudChat>
+
+                <MudChat Color="_selectedColor" Dense="@_dense" Elevation="@_elevation" Variant="@_oVariant" Square="_square" ArrowPosition="_selectedArrowPosition" ChatPosition="ChatBubblePosition.Start">
+                    <MudChatHeader><img class="reply_icon" src="/assets/images/icon/ai-research.svg"></MudChatHeader>
+                    <MudChatBubble>
+                        <MudCard>
+                            @* <MudCardHeader>
+                                <CardHeaderAvatar>
+                                    <MudAvatar Color="Color.Secondary">I</MudAvatar>
+                                </CardHeaderAvatar>
+                                <CardHeaderContent>
+                                    <MudText Typo="Typo.body1">Istra Croatia</MudText>
+                                    <MudText Typo="Typo.body2">Peninsula in Europe</MudText>
+                                </CardHeaderContent>
+                                <CardHeaderActions>
+                                    <MudIconButton Icon="@Icons.Material.Filled.Settings" Color="Color.Default" />
+                                </CardHeaderActions>
+                            </MudCardHeader> *@
+                            @* <MudCardMedia Image="images/pilars.jpg" Height="250" /> *@
+                            <MudCarousel Class="mud-width-full" Style="height:400px; width:550px" ShowArrows="@arrows" ShowBullets="@bullets" EnableSwipeGesture="@enableSwipeGesture" AutoCycle="@autocycle" TData="object">
+                                <MudCarouselItem Transition="transition">
+                                    <div class="d-flex" style="height:100%">
+                                        <MudCardMedia Image="/assets/images/01.webp" Height="250"  Style="width:100%" />                                        
+                                    </div>                                    
+                                </MudCarouselItem>
+                                <MudCarouselItem Transition="transition">
+                                    <div class="d-flex" style="height:100%">
+                                        <MudCardMedia Image="/assets/images/02.webp" Height="250"  Style="width:100%" />                                        
+                                    </div>                                   
+                                </MudCarouselItem>
+                                <MudCarouselItem Transition="transition">
+                                    <div class="d-flex" style="height:100%">
+                                        <MudCardMedia Image="/assets/images/03.webp" Height="250"  Style="width:100%" />                                        
+                                    </div>                                   
+                                </MudCarouselItem>
+                            </MudCarousel>
+                            <MudCardContent>
+                                <MudText Typo="Typo.body1">18 Robinson Road</MudText>
+                                <MudText Typo="Typo.body2">18 Robinson Road, Singapore 048547</MudText>
+                            </MudCardContent>
+                            <MudCardActions>
+                                <MudIconButton Icon="@Icons.Material.Filled.Favorite" Color="Color.Default" />
+                                <MudIconButton Icon="@Icons.Material.Filled.Share" Color="Color.Default" />
+                            </MudCardActions>
+                        </MudCard>
+                    </MudChatBubble>               
+                    <MudChatFooter Text="Seen at 12:46" />
+                </MudChat>
+                <MudGrid Class="mb-2">
+                    <MudItem xs="12" sm="6" Class="pl-9">
+                        6 Aug 2025 02:41 PM
+                    </MudItem>
+                    <MudItem xs="12" sm="6" Class="pr-15 text_right">
+                        <MudIconButton Icon="@Icons.Material.Filled.ThumbUpAlt" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                        <MudIconButton Icon="@Icons.Material.Filled.ThumbDownAlt" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                        <MudIconButton Icon="@Icons.Material.Filled.ContentCopy" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                        <MudIconButton Icon="@Icons.Material.Filled.Cached" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                            <MudIconButton Icon="@Icons.Material.Sharp.MoreVert" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                    </MudItem>
+                </MudGrid>
+
+                @* /card chat 01*@
+                @* card chat 02*@
+                <MudChat Color="_selectedColor" Dense="@_dense" Elevation="@_elevation" Variant="@_variant" Square="_square" ArrowPosition="_selectedArrowPosition" ChatPosition="ChatBubblePosition.End">
+                    <MudChatHeader Name="Alok" Time="12:46" />
+                    <MudChatBubble>Know How Property show in card? </MudChatBubble>
+                    <MudChatFooter Text="Seen at 12:46" />
+                </MudChat>
+
+                <MudChat Color="_selectedColor" Dense="@_dense" Elevation="@_elevation" Variant="@_oVariant" Square="_square" ArrowPosition="_selectedArrowPosition" ChatPosition="ChatBubblePosition.Start">
+                    <MudChatHeader><img class="reply_icon" src="/assets/images/icon/ai-research.svg"></MudChatHeader>
+                    <MudChatBubble>
+                        <MudCard>
+                            @* <MudCardHeader>
+                                <CardHeaderAvatar>
+                                    <MudAvatar Color="Color.Secondary">I</MudAvatar>
+                                </CardHeaderAvatar>
+                                <CardHeaderContent>
+                                    <MudText Typo="Typo.body1">Istra Croatia</MudText>
+                                    <MudText Typo="Typo.body2">Peninsula in Europe</MudText>
+                                </CardHeaderContent>
+                                <CardHeaderActions>
+                                    <MudIconButton Icon="@Icons.Material.Filled.Settings" Color="Color.Default" />
+                                </CardHeaderActions>
+                            </MudCardHeader> *@
+                            <MudCardMedia Image="/assets/images/01.webp" Height="250" Style="width:100%" />
+                            <MudCardContent>
+                                <MudText Typo="Typo.body1">18 Robinson Road</MudText>
+                                <MudText Typo="Typo.body2">18 Robinson Road, Singapore 048547</MudText>
+                            </MudCardContent>
+                            <MudCardActions Class="text_right">
+                                <MudIconButton Icon="@Icons.Material.Outlined.RemoveRedEye" Color="Color.Default" />
+                                <MudIconButton Icon="@Icons.Material.Outlined.ArrowRightAlt" Color="Color.Default" />
+                            </MudCardActions>
+                        </MudCard>
+                    </MudChatBubble>
+                    <MudChatFooter Text="Seen at 12:46" />
+                </MudChat>
+                <MudGrid Class="mb-2">
+                    <MudItem xs="12" sm="6" Class="pl-9">
+                        6 Aug 2025 02:41 PM
+                    </MudItem>
+                    <MudItem xs="12" sm="6" Class="pr-15 text_right">
+                        <MudIconButton Icon="@Icons.Material.Filled.ThumbUpAlt" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                        <MudIconButton Icon="@Icons.Material.Filled.ThumbDownAlt" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                        <MudIconButton Icon="@Icons.Material.Filled.ContentCopy" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                        <MudIconButton Icon="@Icons.Material.Filled.Cached" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                            <MudIconButton Icon="@Icons.Material.Sharp.MoreVert" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                    </MudItem>
+                </MudGrid>
+                @* /card chat 02*@
+                @* card chat 03*@
+                <MudChat Color="_selectedColor" Dense="@_dense" Elevation="@_elevation" Variant="@_variant" Square="_square" ArrowPosition="_selectedArrowPosition" ChatPosition="ChatBubblePosition.End">
+                    <MudChatHeader Name="Alok" Time="12:46" />
+                    <MudChatBubble>Know How Property show in card? </MudChatBubble>
+                    <MudChatFooter Text="Seen at 12:46" />
+                </MudChat>
+
+                <MudChat Color="_selectedColor" Dense="@_dense" Elevation="@_elevation" Variant="@_oVariant" Square="_square" ArrowPosition="_selectedArrowPosition" ChatPosition="ChatBubblePosition.Start">
+                    <MudChatHeader><img class="reply_icon" src="/assets/images/icon/ai-research.svg"></MudChatHeader>
+                    <MudChatBubble>
+                        <MudCarousel Class="mud-width-full" Style="height:400px; width:550px" ShowArrows="@arrows" ShowBullets="@bullets" EnableSwipeGesture="@enableSwipeGesture" AutoCycle="@autocycle" TData="object">
+                            <MudCarouselItem Transition="transition">                                
+                                    <MudCard>                                       
+                                        <MudCardMedia Image="/assets/images/01.webp" Height="250" />
+
+                                        <MudCardContent>
+                                            <MudText Typo="Typo.body1">18 Robinson Road</MudText>
+                                            <MudText Typo="Typo.body2">18 Robinson Road, Singapore 048547</MudText>
+                                        </MudCardContent>
+                                        <MudCardActions>
+                                            <MudIconButton Icon="@Icons.Material.Filled.Favorite" Color="Color.Default" />
+                                            <MudIconButton Icon="@Icons.Material.Filled.Share" Color="Color.Default" />
+                                        </MudCardActions>
+                                    </MudCard>                                
+                            </MudCarouselItem>
+                            <MudCarouselItem Transition="transition">                                
+                                    <MudCard>                                       
+                                        <MudCardMedia Image="/assets/images/01.webp" Height="250" />
+
+                                        <MudCardContent>
+                                        <MudText Typo="Typo.body1">78 Shenton Way Tower 2</MudText>
+                                        <MudText Typo="Typo.body2">78 Shenton Way, Singapore 079120</MudText>
+                                        </MudCardContent>
+                                        <MudCardActions>
+                                            <MudIconButton Icon="@Icons.Material.Filled.Favorite" Color="Color.Default" />
+                                            <MudIconButton Icon="@Icons.Material.Filled.Share" Color="Color.Default" />
+                                        </MudCardActions>
+                                    </MudCard>                                
+                            </MudCarouselItem>
+                            <MudCarouselItem Transition="transition">                                
+                                    <MudCard>                                       
+                                       
+                                        <MudCardMedia Image="/assets/images/01.webp" Height="250" />
+                                        <MudCardContent>
+                                        <MudText Typo="Typo.body1">9 Penang Road Tower 2</MudText>
+                                        <MudText Typo="Typo.body2">9 Penang Road, Singapore 238459</MudText>
+                                        </MudCardContent>
+                                        <MudCardActions>
+                                            <MudIconButton Icon="@Icons.Material.Filled.Favorite" Color="Color.Default" />
+                                            <MudIconButton Icon="@Icons.Material.Filled.Share" Color="Color.Default" />
+                                        </MudCardActions>
+                                    </MudCard>                               
+                            </MudCarouselItem>
+                        </MudCarousel>
+                    </MudChatBubble>                   
+                </MudChat>
+                <MudGrid Class="mb-2">
+                    <MudItem xs="12" sm="6" Class="pl-9">
+                        6 Aug 2025 02:41 PM
+                    </MudItem>
+                    <MudItem xs="12" sm="6" Class="pr-15 text_right">
+                        <MudIconButton Icon="@Icons.Material.Filled.ThumbUpAlt" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                        <MudIconButton Icon="@Icons.Material.Filled.ThumbDownAlt" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                        <MudIconButton Icon="@Icons.Material.Filled.ContentCopy" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                        <MudIconButton Icon="@Icons.Material.Filled.Cached" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                            <MudIconButton Icon="@Icons.Material.Sharp.MoreVert" Variant="Variant.Filled" Color="Color.Transparent" Size="Size.Small" />
+                    </MudItem>
+                </MudGrid>
+               
+                @* /card chat 03*@
+                @* chat section end *@
+
+                    @foreach (var msg in childMessage)
+                    {
+                        if (!string.IsNullOrEmpty(@msg))
+                        {
+                            <MudStack Spacing="2">
+                                @* USER MESSAGE (Right side) *@
+                                <div class="d-flex justify-end">
+                                    <MudPaper Class="pa-3" Style="max-width: 400px; border-radius: 12px;" Elevation="1">
+                                        @msg
+                                        <div class="text-right mt-1" style="font-size:12px;opacity:0.6">
+                                            Seen at 12:46
+                                        </div>
+                                    </MudPaper>
+                                </div>
+                                @* AI MESSAGE (Left side) *@
+                                <div class="d-flex justify-start">
+                                    <MudPaper Class="pa-3" Style="max-width: 400px; border-radius: 12px;" Elevation="0" Outlined="true">
+                                        Brought bigger buildings and larger sites all close to each other
+                                        <div class="text-left mt-1" style="font-size:12px;opacity:0.6">
+                                            Seen at 12:46
+                                        </div>
+                                    </MudPaper>
+                                </div>
+                            </MudStack>
+                        }
+                    }
+                </div>
+                }
+            <div class="control_area">
+                @if (showDiv)
+                {
+                    <MudGrid Class="mud-elevation-0 mb-10 mt-3 custom_grid">
+                        <MudItem xs="12" sm="12" Class="justify-center mud-width-full mud-elevation-0 background-color-none">
+                            <MudPaper Class="background-color-none" Elevation="0">
+                                <MudText Align="Align.Center" Typo="Typo.h5">Hey, what’s on your mind today?</MudText>
+                            </MudPaper>
+                        </MudItem>
+                    </MudGrid>
+                }
+               <ChatInputArea Message="" OnMessageSent="ReceiveMessageFromChild" />
+                </div>
+
+            </MudContainer>
+        @* </div> *@
+    </MudDrawerContainer>
+</MudPaper>
+
+@code
+{
+    private bool _openStart = false;
+    private bool _openEnd = false;
+    private bool _open = false;
+    private bool _isHistoryOpen = false;
+    private bool _showChat = false;
+    private string MessageText { get; set; }
+
+    private bool _dense = false;
+    private bool _square = true;
+    private int _elevation = 0;
+    private Variant _variant = Variant.Text;
+    private Variant _oVariant = Variant.Outlined;
+    private Color _selectedColor = Color.Default;
+    //private ChatArrowPosition _selectedArrowPosition = ChatArrowPosition.None;
+    private bool showDiv = true;
+    private string userInput;
+
+    private bool arrows = true;
+    private bool bullets = false;
+    private bool enableSwipeGesture = true;
+    private bool autocycle = true;
+    private Transition transition = Transition.Slide;
+
+    [Inject] private IDialogService DialogService { get; set; }
+    [Inject] IJSRuntime JS { get; set; }
+    string state = "Message box hasn't been opened yet";
+
+    ChatHistory.HistoryModel chatHistories = new ChatHistory.HistoryModel
+    {
+        Name = "Pankaj",
+        Age = 30
+    };
+
+    private async void OnButtonClicked()
+    {
+        bool? result = await DialogService.ShowMessageBoxAsync(
+            "Warning",
+            "Deleting can not be undone!",
+            yesText: "Delete!", cancelText: "Cancel");
+        state = result == null ? "Canceled" : "Deleted!";
+        StateHasChanged();
+    }
+
+    [CascadingParameter]
+    public bool Rtl { get; set; }
+
+    private void ToggleStartDrawer()
+    {
+        _openStart = !_openStart;
+    }
+
+    private void ToggleEndDrawer()
+    {
+        _openEnd = !_openEnd;
+    }
+    private void ToggleDrawer()
+    {
+        _open = !_open;
+    }
+    private void OnAddClick()
+    {
+        // Your logic here
+        Console.WriteLine("Add clicked");
+    }
+
+    private void OnVoiceClick()
+    {
+        // Your logic here
+        Console.WriteLine("Voice clicked");
+    }
+    private void HistoryToggle()
+    {
+        _isHistoryOpen = !_isHistoryOpen;
+    }
+    private void ChatToggle()
+    {
+        _showChat = !_showChat;
+    }
+
+    private void SendQuery()
+    {
+        // You can add validation or logic here
+        if (!string.IsNullOrWhiteSpace(userInput))
+        {
+            showDiv = false;
+            _showChat = true;
+        }
+    }
+    private List<string> childMessage = new List<string> { "" };
+
+    private void ReceiveMessageFromChild(string message)
+    {
+        childMessage.Add(message);
+        if (!string.IsNullOrWhiteSpace(message))
+        {
+            showDiv = false;
+            _showChat = true;
+        }
+    }
+}

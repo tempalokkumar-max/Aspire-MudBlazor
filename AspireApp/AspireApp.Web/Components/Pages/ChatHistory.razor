@@ -1,0 +1,22 @@
+﻿@rendermode InteractiveServer
+<MudText Typo="Typo.h6">History</MudText>
+<div class="border p-2 rounded">
+    @* <h4>Child Component</h4>    
+    <p>User Info: @UserData.Name (Age: @UserData.Age)</p> *@
+    @foreach (var message in Messages)
+    {
+        <p>@message</p>
+    }
+</div>
+@code {
+    [Parameter] public List<string> Messages { get; set; } = new List<string>{""};
+
+    // Passing a complex object
+    [Parameter] public HistoryModel UserData { get; set; } = new HistoryModel();
+
+    public class HistoryModel
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+    }
+}

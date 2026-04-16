@@ -1,0 +1,39 @@
+﻿@* <div class="p-2 border rounded bg-light">
+    <h4>Child Component</h4>
+    <p>Message from Parent: @Message</p>
+
+    <button class="btn btn-primary" @onclick="SendMessageToParent">Send Message to Parent</button>
+</div> *@
+
+@rendermode InteractiveServer
+<MudGrid Class="pa-4 mud-elevation-0 custom_grid message_bottom">
+    <MudItem xs="12" sm="12" Class="mud-elevation-0 pt-0 pl-0">
+        <MudPaper Class="mud-elevation-0 background-color-none" Elevation="0">
+            <MudTextField T="string" Label="" Variant="Variant.Text" Lines="2" MaxLines="8" Placeholder="Type your message here..." AutoGrow="true" @bind-Value="Message"></MudTextField>
+        </MudPaper>
+    </MudItem>
+    <MudItem xs="6" sm="6" Class="pt-0 pl-0 mud-elevation-0 chatsend_left background-color-none">
+        <MudPaper Class="justify-center mud-width-full mud-elevation-0 background-color-none" Elevation="0">
+            <MudIconButton Icon="@Icons.Material.Filled.Share" Disabled="true" aria-label="share" />
+        </MudPaper>
+    </MudItem>
+    <MudItem xs="6" sm="6" Class="pt-0 pl-0 mud-elevation-0 chatsend_right background-color-none">
+        <MudPaper Class="d-flex align-end justify-end mud-width-full mud-elevation-0 background-color-none" Elevation="0">
+            @* <MudIconButton Icon="@Icons.Material.Filled.Add" @onclick="OnAddClick" aria-label="Add" />
+            <MudIconButton Icon="@Icons.Material.Filled.KeyboardVoice" @onclick="OnVoiceClick" aria-label="Voice" /> *@
+            <MudIconButton Icon="@Icons.Material.Outlined.ArrowUpward" @onclick="SendMessageToParent" aria-label="Send" />
+        </MudPaper>
+    </MudItem>
+</MudGrid>
+
+@code {
+    [Parameter] public string Message { get; set; } = string.Empty;
+
+    [Parameter] public EventCallback<string> OnMessageSent { get; set; }
+
+    private async Task SendMessageToParent()
+    {
+        await OnMessageSent.InvokeAsync(Message);
+        Message = string.Empty;
+    }
+}
