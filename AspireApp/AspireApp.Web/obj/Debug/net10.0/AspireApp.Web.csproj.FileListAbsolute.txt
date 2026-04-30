@@ -238,8 +238,6 @@ C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\AspireApp\AspireApp.Web\obj\Deb
 C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\AspireApp\AspireApp.Web\obj\Debug\net10.0\compressed\g07cnq9dyz-{0}-brqhdzye8n-brqhdzye8n.gz
 C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\AspireApp\AspireApp.Web\obj\Debug\net10.0\compressed\gnn44wgpf1-{0}-rc6gczpm15-rc6gczpm15.gz
 C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\AspireApp\AspireApp.Web\obj\Debug\net10.0\compressed\6yvtj0msss-{0}-kbws6v46hz-kbws6v46hz.gz
-C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\AspireApp\AspireApp.Web\obj\Debug\net10.0\compressed\zq6m3zqezn-{0}-b9228eflpl-b9228eflpl.gz
-C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\AspireApp\AspireApp.Web\obj\Debug\net10.0\compressed\z24h1eq5z2-{0}-2tj1sjhksk-2tj1sjhksk.gz
 C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\AspireApp\AspireApp.Web\obj\Debug\net10.0\compressed\xswk9v1g3b-{0}-b9dtbzexzn-b9dtbzexzn.gz
 C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\AspireApp\AspireApp.Web\obj\Debug\net10.0\compressed\qtykezecl3-{0}-b9dtbzexzn-b9dtbzexzn.gz
 C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\AspireApp\AspireApp.Web\obj\Debug\net10.0\staticwebassets.build.json
@@ -255,3 +253,5 @@ C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\AspireApp\AspireApp.Web\obj\Deb
 C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\AspireApp\AspireApp.Web\obj\Debug\net10.0\AspireApp.Web.genruntimeconfig.cache
 C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\AspireApp\AspireApp.Web\obj\Debug\net10.0\ref\AspireApp.Web.dll
 C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\AspireApp\AspireApp.Web\obj\Debug\net10.0\compressed\zaol9juy4r-{0}-2wbcxuemtk-2wbcxuemtk.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\AspireApp\AspireApp.Web\obj\Debug\net10.0\compressed\zq6m3zqezn-{0}-hwaxidwiwj-hwaxidwiwj.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\AspireApp\AspireApp.Web\obj\Debug\net10.0\compressed\z24h1eq5z2-{0}-xbbil6v7co-xbbil6v7co.gz

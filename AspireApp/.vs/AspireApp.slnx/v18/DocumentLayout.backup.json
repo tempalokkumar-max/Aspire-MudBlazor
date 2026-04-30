@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|c:\\alok kumar\\sources\\blazerapp\\aspire-mudblazor\\aspireapp\\aspireapp.web\\components\\pages\\chatinputarea.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|solutionrelative:aspireapp.web\\components\\pages\\chatinputarea.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|c:\\alok kumar\\sources\\blazerapp\\aspire-mudblazor\\aspireapp\\aspireapp.web\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|solutionrelative:aspireapp.web\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|c:\\alok kumar\\sources\\blazerapp\\aspire-mudblazor\\aspireapp\\aspireapp.web\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|solutionrelative:aspireapp.web\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|c:\\alok kumar\\sources\\blazerapp\\aspire-mudblazor\\aspireapp\\aspireapp.web\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|solutionrelative:aspireapp.web\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|c:\\alok kumar\\sources\\blazerapp\\aspire-mudblazor\\aspireapp\\aspireapp.web\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|solutionrelative:aspireapp.web\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|c:\\alok kumar\\sources\\blazerapp\\aspire-mudblazor\\aspireapp\\aspireapp.web\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|solutionrelative:aspireapp.web\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|c:\\alok kumar\\sources\\blazerapp\\aspire-mudblazor\\aspireapp\\aspireapp.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|solutionrelative:aspireapp.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|c:\\alok kumar\\sources\\blazerapp\\aspire-mudblazor\\aspireapp\\aspireapp.web\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|solutionrelative:aspireapp.web\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|c:\\alok kumar\\sources\\blazerapp\\aspire-mudblazor\\aspireapp\\aspireapp.web\\components\\pages\\chatinputarea.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|solutionrelative:aspireapp.web\\components\\pages\\chatinputarea.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|c:\\alok kumar\\sources\\blazerapp\\aspire-mudblazor\\aspireapp\\aspireapp.web\\components\\pages\\chat.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -23,16 +43,8 @@
       "RelativeMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|solutionrelative:aspireapp.web\\components\\pages\\chathistory.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|c:\\alok kumar\\sources\\blazerapp\\aspire-mudblazor\\aspireapp\\aspireapp.web\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|solutionrelative:aspireapp.web\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|c:\\alok kumar\\sources\\blazerapp\\aspire-mudblazor\\aspireapp\\aspireapp.web\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|solutionrelative:aspireapp.web\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|c:\\alok kumar\\sources\\blazerapp\\aspire-mudblazor\\aspireapp\\aspireapp.web\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|solutionrelative:aspireapp.web\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|c:\\alok kumar\\sources\\blazerapp\\aspire-mudblazor\\aspireapp\\aspireapp.web\\components-old\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -45,14 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|c:\\alok kumar\\sources\\blazerapp\\aspire-mudblazor\\aspireapp\\aspireapp.web\\components-old\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|solutionrelative:aspireapp.web\\components-old\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|c:\\alok kumar\\sources\\blazerapp\\aspire-mudblazor\\aspireapp\\aspireapp.web\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|solutionrelative:aspireapp.web\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|c:\\alok kumar\\sources\\blazerapp\\aspire-mudblazor\\aspireapp\\aspireapp.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|solutionrelative:aspireapp.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{167C9083-B235-CCD4-47F1-339EE30AC88F}|AspireApp.Web\\AspireApp.Web.csproj|c:\\alok kumar\\sources\\blazerapp\\aspire-mudblazor\\aspireapp\\aspireapp.web\\wwwroot\\app-old.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -70,11 +74,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "AspireApp.Web\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "AspireApp.Web\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-29T06:50:41.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ChatInputArea.razor",
               "DocumentMoniker": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\Pages\\ChatInputArea.razor",
               "RelativeDocumentMoniker": "AspireApp.Web\\Components\\Pages\\ChatInputArea.razor",
@@ -87,20 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ChatHistory.razor",
-              "DocumentMoniker": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\Pages\\ChatHistory.razor",
-              "RelativeDocumentMoniker": "AspireApp.Web\\Components\\Pages\\ChatHistory.razor",
-              "ToolTip": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\Pages\\ChatHistory.razor",
-              "RelativeToolTip": "AspireApp.Web\\Components\\Pages\\ChatHistory.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-16T16:38:27.215Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "app.css",
               "DocumentMoniker": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\wwwroot\\app.css",
               "RelativeDocumentMoniker": "AspireApp.Web\\wwwroot\\app.css",
@@ -113,20 +137,84 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "AspireApp.Web\\Components\\Layout\\MainLayout.razor",
               "ToolTip": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\Layout\\MainLayout.razor",
               "RelativeToolTip": "AspireApp.Web\\Components\\Layout\\MainLayout.razor",
-              "ViewState": "AgIAADYAAAAAAAAAAAAowDwAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAYwGgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-04-16T16:31:05.527Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "AspireApp.Web\\Components\\_Imports.razor",
+              "ToolTip": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\_Imports.razor",
+              "RelativeToolTip": "AspireApp.Web\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-14T03:49:05.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Program.cs",
+              "RelativeDocumentMoniker": "AspireApp.Web\\Program.cs",
+              "ToolTip": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Program.cs",
+              "RelativeToolTip": "AspireApp.Web\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T03:43:10.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\App.razor",
+              "RelativeDocumentMoniker": "AspireApp.Web\\Components\\App.razor",
+              "ToolTip": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\App.razor",
+              "RelativeToolTip": "AspireApp.Web\\Components\\App.razor",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABQAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-14T03:47:55.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "AspireApp.Web\\Components\\Routes.razor",
+              "ToolTip": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\Routes.razor",
+              "RelativeToolTip": "AspireApp.Web\\Components\\Routes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-14T03:47:47.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "Chat.razor",
+              "DocumentMoniker": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\Pages\\Chat.razor",
+              "RelativeDocumentMoniker": "AspireApp.Web\\Components\\Pages\\Chat.razor",
+              "ToolTip": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\Pages\\Chat.razor",
+              "RelativeToolTip": "AspireApp.Web\\Components\\Pages\\Chat.razor",
+              "ViewState": "AgIAADsBAAAAAAAAAAAAAD4BAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-14T03:48:57.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components-Old\\_Imports.razor",
               "RelativeDocumentMoniker": "AspireApp.Web\\Components-Old\\_Imports.razor",
@@ -138,32 +226,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\_Imports.razor",
-              "RelativeDocumentMoniker": "AspireApp.Web\\Components\\_Imports.razor",
-              "ToolTip": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\_Imports.razor",
-              "RelativeToolTip": "AspireApp.Web\\Components\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "ChatHistory.razor",
+              "DocumentMoniker": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\Pages\\ChatHistory.razor",
+              "RelativeDocumentMoniker": "AspireApp.Web\\Components\\Pages\\ChatHistory.razor",
+              "ToolTip": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\Pages\\ChatHistory.razor",
+              "RelativeToolTip": "AspireApp.Web\\Components\\Pages\\ChatHistory.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-14T03:49:05.788Z"
+              "WhenOpened": "2026-04-16T16:38:27.215Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Chat.razor",
-              "DocumentMoniker": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\Pages\\Chat.razor",
-              "RelativeDocumentMoniker": "AspireApp.Web\\Components\\Pages\\Chat.razor",
-              "ToolTip": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\Pages\\Chat.razor",
-              "RelativeToolTip": "AspireApp.Web\\Components\\Pages\\Chat.razor",
-              "ViewState": "AgIAADsBAAAAAAAAAAAAAD4BAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-14T03:48:57.193Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "AspireApp.Web\\Components\\Layout\\NavMenu.razor",
@@ -171,25 +246,11 @@
               "RelativeToolTip": "AspireApp.Web\\Components\\Layout\\NavMenu.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-16T16:30:30.236Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-16T16:30:30.236Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "App.razor",
-              "DocumentMoniker": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\App.razor",
-              "RelativeDocumentMoniker": "AspireApp.Web\\Components\\App.razor",
-              "ToolTip": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\App.razor",
-              "RelativeToolTip": "AspireApp.Web\\Components\\App.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-14T03:47:55.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Routes.razor",
               "DocumentMoniker": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components-Old\\Routes.razor",
               "RelativeDocumentMoniker": "AspireApp.Web\\Components-Old\\Routes.razor",
@@ -201,19 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Routes.razor",
-              "DocumentMoniker": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\Routes.razor",
-              "RelativeDocumentMoniker": "AspireApp.Web\\Components\\Routes.razor",
-              "ToolTip": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components\\Routes.razor",
-              "RelativeToolTip": "AspireApp.Web\\Components\\Routes.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-14T03:47:47.28Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Components-Old\\App.razor",
               "RelativeDocumentMoniker": "AspireApp.Web\\Components-Old\\App.razor",
@@ -225,19 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Program.cs",
-              "RelativeDocumentMoniker": "AspireApp.Web\\Program.cs",
-              "ToolTip": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\Program.cs",
-              "RelativeToolTip": "AspireApp.Web\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T03:43:10.615Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "app-old.css",
               "DocumentMoniker": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.Web\\wwwroot\\app-old.css",
               "RelativeDocumentMoniker": "AspireApp.Web\\wwwroot\\app-old.css",
@@ -249,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Alok Kumar\\Sources\\BlazerApp\\Aspire-MudBlazor\\AspireApp\\AspireApp.ApiService\\Program.cs",
               "RelativeDocumentMoniker": "AspireApp.ApiService\\Program.cs",

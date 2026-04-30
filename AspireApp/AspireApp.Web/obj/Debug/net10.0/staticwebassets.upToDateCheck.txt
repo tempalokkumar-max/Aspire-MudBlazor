@@ -54,9 +54,9 @@ C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\AspireApp\AspireApp.Web\wwwroot
 C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\AspireApp\AspireApp.Web\wwwroot\assets\images\icon\cancel.svg
 C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\AspireApp\AspireApp.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
 C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\AspireApp\AspireApp.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
-C:\Users\Alok.Kumar\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.5\_framework\blazor.server.js
+C:\Users\Alok.Kumar\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.7\_framework\blazor.server.js
 C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\AspireApp\AspireApp.Web\wwwroot\app.css
-C:\Users\Alok.Kumar\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.5\_framework\blazor.web.js
+C:\Users\Alok.Kumar\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.7\_framework\blazor.web.js
 wwwroot\app-old.css
 wwwroot\app.css
 wwwroot\assets\images\01.webp
@@ -119,5 +119,5 @@ wwwroot\lib\bootstrap\dist\js\bootstrap.js
 wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
 wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
 wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
-C:\Users\Alok.Kumar\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.5\build\..\_framework\blazor.server.js
-C:\Users\Alok.Kumar\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.5\build\..\_framework\blazor.web.js
+C:\Users\Alok.Kumar\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.7\build\..\_framework\blazor.server.js
+C:\Users\Alok.Kumar\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.7\build\..\_framework\blazor.web.js
