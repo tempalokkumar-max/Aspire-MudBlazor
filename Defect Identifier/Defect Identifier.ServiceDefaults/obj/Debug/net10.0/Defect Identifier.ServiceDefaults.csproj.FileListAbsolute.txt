@@ -1,0 +1,13 @@
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.ServiceDefaults\bin\Debug\net10.0\Defect Identifier.ServiceDefaults.deps.json
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.ServiceDefaults\bin\Debug\net10.0\Defect Identifier.ServiceDefaults.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.ServiceDefaults\bin\Debug\net10.0\Defect Identifier.ServiceDefaults.pdb
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.ServiceDefaults\obj\Debug\net10.0\Defect Identifier.ServiceDefaults.csproj.AssemblyReference.cache
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.ServiceDefaults\obj\Debug\net10.0\Defect Identifier.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.ServiceDefaults\obj\Debug\net10.0\Defect Identifier.ServiceDefaults.AssemblyInfoInputs.cache
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.ServiceDefaults\obj\Debug\net10.0\Defect Identifier.ServiceDefaults.AssemblyInfo.cs
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.ServiceDefaults\obj\Debug\net10.0\Defect Identifier.ServiceDefaults.csproj.CoreCompileInputs.cache
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.ServiceDefaults\obj\Debug\net10.0\Defect Identifier.ServiceDefaults.sourcelink.json
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.ServiceDefaults\obj\Debug\net10.0\Defect Identifier.ServiceDefaults.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.ServiceDefaults\obj\Debug\net10.0\refint\Defect Identifier.ServiceDefaults.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.ServiceDefaults\obj\Debug\net10.0\Defect Identifier.ServiceDefaults.pdb
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.ServiceDefaults\obj\Debug\net10.0\ref\Defect Identifier.ServiceDefaults.dll

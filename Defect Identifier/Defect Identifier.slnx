@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Defect Identifier.ApiService/Defect Identifier.ApiService.csproj" />
+  <Project Path="Defect Identifier.AppHost/Defect Identifier.AppHost.csproj" />
+  <Project Path="Defect Identifier.ServiceDefaults/Defect Identifier.ServiceDefaults.csproj" />
+  <Project Path="Defect Identifier.Web/Defect Identifier.Web.csproj" />
+</Solution>

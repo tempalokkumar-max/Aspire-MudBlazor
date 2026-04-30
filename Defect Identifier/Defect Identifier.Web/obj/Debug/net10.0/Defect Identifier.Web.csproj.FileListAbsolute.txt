@@ -1,0 +1,111 @@
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\appsettings.Development.json
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\appsettings.json
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\Defect Identifier.Web.staticwebassets.runtime.json
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\Defect Identifier.Web.staticwebassets.endpoints.json
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\Defect Identifier.Web.exe
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\Defect Identifier.Web.deps.json
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\Defect Identifier.Web.runtimeconfig.json
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\Defect Identifier.Web.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\Defect Identifier.Web.pdb
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\Microsoft.Extensions.AmbientMetadata.Application.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\Microsoft.Extensions.Compliance.Abstractions.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.AutoActivation.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\Microsoft.Extensions.Diagnostics.ExceptionSummarization.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\Microsoft.Extensions.Http.Diagnostics.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\Microsoft.Extensions.Http.Resilience.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\Microsoft.Extensions.Resilience.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\Microsoft.Extensions.ServiceDiscovery.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\Microsoft.Extensions.ServiceDiscovery.Abstractions.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\Microsoft.Extensions.Telemetry.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\Microsoft.Extensions.Telemetry.Abstractions.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\OpenTelemetry.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\OpenTelemetry.Api.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\OpenTelemetry.Api.ProviderBuilderExtensions.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\OpenTelemetry.Exporter.OpenTelemetryProtocol.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\OpenTelemetry.Extensions.Hosting.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\OpenTelemetry.Instrumentation.AspNetCore.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\OpenTelemetry.Instrumentation.Http.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\OpenTelemetry.Instrumentation.Runtime.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\Polly.Core.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\Polly.Extensions.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\Polly.RateLimiting.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\Defect Identifier.ServiceDefaults.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\bin\Debug\net10.0\Defect Identifier.ServiceDefaults.pdb
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\EmbeddedAttribute.cs
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\ValidatableTypeAttribute.cs
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\Defect Identifier.Web.csproj.AssemblyReference.cache
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\Defect Identifier.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\Defect Identifier.Web.AssemblyInfoInputs.cache
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\Defect Identifier.Web.AssemblyInfo.cs
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\Defect Identifier.Web.csproj.CoreCompileInputs.cache
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\Defect Identifier.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\Defect Identifier.Web.sourcelink.json
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\scopedcss\bundle\Defect Identifier.Web.styles.css
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\scopedcss\projectbundle\Defect Identifier.Web.bundle.scp.css
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\vzbn51p8r3-{0}-si3g92ptus-si3g92ptus.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\t5875zoweo-{0}-t1cqhe9u97-t1cqhe9u97.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\y68t8xxagv-{0}-c2jlpeoesf-c2jlpeoesf.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\vpaltih2mi-{0}-sejl45xvog-sejl45xvog.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\g99ye664mf-{0}-aexeepp0ev-aexeepp0ev.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\tltyj1cwhv-{0}-xvp3kq03qx-xvp3kq03qx.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\0fx8l2gaoy-{0}-ausgxo2sd3-ausgxo2sd3.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\wqyqzbtnho-{0}-22vffe00uq-22vffe00uq.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\upluurx81w-{0}-cosvhxvwiu-cosvhxvwiu.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\gs7lgs5ulq-{0}-qesaa3a1fm-qesaa3a1fm.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\93sxf2sx99-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\cnprzerknz-{0}-tmc1g35s3z-tmc1g35s3z.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\ft5q6adg1t-{0}-fsbi9cje9m-fsbi9cje9m.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\cmlj43n1wh-{0}-rxsg74s51o-rxsg74s51o.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\qhaoy0st46-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\q4egmi8skq-{0}-q9ht133ko3-q9ht133ko3.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\a1k33t9sk0-{0}-jd9uben2k1-jd9uben2k1.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\ogag5w1rgl-{0}-gye83jo8yx-gye83jo8yx.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\8uhp3h1vmo-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\k19shaxglm-{0}-wl58j5mj3v-wl58j5mj3v.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\raqamhspu3-{0}-c2oey78nd0-c2oey78nd0.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\rx2s23f06v-{0}-d4r6k3f320-d4r6k3f320.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\pujtg8osiw-{0}-j5mq2jizvt-j5mq2jizvt.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\d5dx25rscr-{0}-keugtjm085-keugtjm085.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\fmg2lqmzit-{0}-nvvlpmu67g-nvvlpmu67g.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\x3lpallo9h-{0}-2wn6d1nvwe-2wn6d1nvwe.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\5gzpca1b1w-{0}-j7d0ohwmu6-j7d0ohwmu6.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\um7vgbov4z-{0}-3cw5u374v6-3cw5u374v6.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\7571qv7q45-{0}-gaijxkcbo4-gaijxkcbo4.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\c9rs18jlvl-{0}-apppyadeha-apppyadeha.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\bt15yd5xar-{0}-ie9aom4ycg-ie9aom4ycg.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\8560q2jutn-{0}-uvalkdyqes-uvalkdyqes.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\pafj6ldguv-{0}-siz9uu0s60-siz9uu0s60.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\2ug3wtank6-{0}-9oqp7etoae-9oqp7etoae.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\h7mkdu2vgh-{0}-nl5hdesl87-nl5hdesl87.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\05fxg8selx-{0}-hd3gran6i8-hd3gran6i8.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\di0uei2nis-{0}-d45fqy96ii-d45fqy96ii.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\4d00ooiumv-{0}-mtnd8c9n8v-mtnd8c9n8v.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\w4kerse9pg-{0}-ls911kug6l-ls911kug6l.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\jmbroeo7k8-{0}-8vyfqsqgz1-8vyfqsqgz1.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\nahekkwyyn-{0}-gk91u67gl6-gk91u67gl6.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\255c5v1f6v-{0}-df6gizpbh6-df6gizpbh6.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\1vn9q20jmf-{0}-1a04cp842c-1a04cp842c.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\iz6mt1ca6i-{0}-4d85u1mtcx-4d85u1mtcx.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\g43lq4bt7g-{0}-ewbsjli576-ewbsjli576.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\2fftemmicb-{0}-hwaxidwiwj-hwaxidwiwj.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\skpguy6pw9-{0}-xbbil6v7co-xbbil6v7co.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\7ll5l4j6ll-{0}-9a9t7lrqcb-9a9t7lrqcb.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\compressed\op947pbdur-{0}-9a9t7lrqcb-9a9t7lrqcb.gz
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\staticwebassets.build.json
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\staticwebassets.development.json
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\swae.build.ex.cache
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\Defect I.7FFD9C88.Up2Date
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\Defect Identifier.Web.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\refint\Defect Identifier.Web.dll
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\Defect Identifier.Web.pdb
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\Defect Identifier.Web.genruntimeconfig.cache
+C:\Alok Kumar\Sources\BlazerApp\Aspire-MudBlazor\Defect Identifier\Defect Identifier\Defect Identifier.Web\obj\Debug\net10.0\ref\Defect Identifier.Web.dll
